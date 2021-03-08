@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>Oh my food</title>
 	<meta charset="utf-8">
@@ -18,26 +18,94 @@
 		</nav>
 	</header>
 	<section id="info">
-		<p><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-		<h1>Réservez le menu qui vous convient</h1>
+		<i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Ville,pays..." name="localisation">
+		<h2>Réservez le menu qui vous convient</h2>
 		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-		<a href="#">Explorer nos restaurants</a>
+		<button>Explorer nos restaurants</button>
 	</section>
 	<section id="fonction">
-		<h1>Fonctionnement</h1>
-		<i class="fas fa-mobile-alt"></i>
-		<i class="fas fa-list-ul"></i>
-		<i class="fas fa-store"></i>
+		<h2>Fonctionnement</h2>
+		<ol>
+			<li>
+				<i class="fas fa-mobile-alt"></i>
+				<p>Choissisez un restaurant</p>
+			</li>
+			<li>
+				<i class="fas fa-list-ul"></i>
+				<p>Composez votre menu</p>
+			</li>
+			<li>
+				<i class="fas fa-store"></i>
+				<p>Degustez au restaurant</p>
+			</li>
+		</ol>
 	</section>
 	<section id="restaurant">
-		<i class="far fa-heart"></i>
+		<h2>Restaurants</h2>
+		<a href="#">
+			<figure>
+				<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
+				<span>Nouveau</span>
+				<figcaption>
+					<h3>La palette du goût</h3>
+					<p>Ménilmonton</p>
+					<i class="far fa-heart"></i>
+				</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure>
+				<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
+				<span>Nouveau</span>
+				<figcaption>
+					<h3>La note enchantée</h3>
+					<p>Charonne</p>
+					<i class="far fa-heart"></i>
+				</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure>
+				<img src="images/restaurants/alafrancaise.jpg" alt="À la Française">
+				<figcaption>
+					<h3>À la Française</h3>
+					<p>Cité Rouge</p>
+					<i class="far fa-heart"></i>
+				</figcaption>
+			</figure>
+		</a>
+		<a href="#">
+			<figure>
+				<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
+				<figcaption>
+					<h3>Le délice des sens</h3>
+					<p>Folie-Méricourt</p>
+					<i class="far fa-heart"></i>
+				</figcaption>
+			</figure>
+		</a>
 	</section>
 	<footer>
-		<h1>Oh my food</h1>
-		<p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-		<p><i class="fas fa-hands-helping"></i>Devenir Partenaire</p>
-		<p>Mentions legales</p>
-		<p>Contact</p>
+		<ul>
+			<li>
+				<h1>Oh my food</h1>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fas fa-utensils"></i>
+					<p>Proposer un restaurant</p>
+				</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-hands-helping"></i>Devenir Partenaire</a>
+			</li>
+			<li>
+				<a href="#">Mentions legales</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
 	</footer>
 </body>
 </html>
