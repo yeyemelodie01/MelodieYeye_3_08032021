@@ -1,0 +1,36 @@
+/* GENERAL */
+
+h1{
+	font-family: 'Shrikhand', cursive;
+}
+
+h2,h3,p{
+	font-family: 'Roboto', sans-serif;
+}
+
+footer{
+	background: #383838;
+	color: #fff;
+}
+
+footer p{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+img{
+	width: 400px;
+	height: 300px;
+	object-fit: cover;
+}
+@media screen and (max-width: 480px){
+	body{
+		width: 480px;
+	}
+}
