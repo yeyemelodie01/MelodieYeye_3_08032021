@@ -1,36 +1,50 @@
-/* GENERAL */
-
-h1{
-	font-family: 'Shrikhand', cursive;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-h2,h3,p{
-	font-family: 'Roboto', sans-serif;
+footer {
+  background: #383838;
+  color: #fff;
 }
 
-footer{
-	background: #383838;
-	color: #fff;
+h1 {
+  font-family: "Shrikhand", cursive;
 }
 
-footer p{
-	font-weight: bold;
+h2, h3, p {
+  font-family: "Roboto", sans-serif;
 }
 
-a{
-	text-decoration: none;
+footer li {
+  color: #fff;
 }
 
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-img{
-	width: 400px;
-	height: 300px;
-	object-fit: cover;
+
+img {
+  width: 858px;
+  height: 400px;
+  object-fit: cover;
 }
-@media screen and (max-width: 480px){
-	body{
-		width: 480px;
-	}
+
+.container {
+  position: relative;
 }
+
+span {
+  background: #99E2D0;
+  color: darkgreen;
+  padding: 1em;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  right: 58px;
+  top: 22px;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
