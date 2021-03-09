@@ -12,19 +12,36 @@
 </head>
 <body>
 	<header>
-		<h1>Oh my food</h1>
+		<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
 		<nav>
-			
+			<ul>
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="lapalettedugout.html">La palette du goût</a>
+				</li>
+				<li>
+					<a href="lanoteenchantee.html">La note enchantée</a>
+				</li>
+				<li>
+					<a href="alafrancaise.html">À la française</a>
+				</li>
+				<li>
+					<a href="ledelicedessens.html">Les delices du sens</a>
+				</li>
+
+			</ul>
 		</nav>
 	</header>
 	<section id="info">
 		<i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Ville,pays..." name="localisation">
-		<h2>Réservez le menu qui vous convient</h2>
+		<h1 class="bold">Réservez le menu qui <br> vous convient</h1>
 		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-		<button>Explorer nos restaurants</button>
+		<button class="white">Explorer nos restaurants</button>
 	</section>
 	<section id="fonction">
-		<h2>Fonctionnement</h2>
+		<h2 class="bold">Fonctionnement</h2>
 		<ol>
 			<li>
 				<p><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</p>
@@ -38,14 +55,12 @@
 		</ol>
 	</section>
 	<section id="restaurant">
-		<h2>Restaurants</h2>
+		<h2 class="bold">Restaurants</h2>
 		<a href="#">
 			<figure>
-				<div class="container">
-					<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
-					<span>Nouveau</span>
-				</div>
-				<figcaption>
+					<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût" class="img1">
+					<span class="bold">Nouveau</span>
+				<figcaption class="new">
 					<h3>La palette du goût</h3>
 					<p>Ménilmonton</p>
 					<i class="far fa-heart"></i>
@@ -54,9 +69,10 @@
 		</a>
 		<a href="#">
 			<figure>
-				<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
-				<span>Nouveau</span>
-				<figcaption>
+				<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée" class="img1"
+				>
+				<span class="bold">Nouveau</span>
+				<figcaption  class="new">
 					<h3>La note enchantée</h3>
 					<p>Charonne</p>
 					<i class="far fa-heart"></i>
@@ -65,7 +81,7 @@
 		</a>
 		<a href="#">
 			<figure>
-				<img src="images/restaurants/alafrancaise.jpg" alt="À la Française">
+				<img src="images/restaurants/alafrancaise.jpg" alt="À la Française" class="img1">
 				<figcaption>
 					<h3>À la Française</h3>
 					<p>Cité Rouge</p>
@@ -75,7 +91,7 @@
 		</a>
 		<a href="#">
 			<figure>
-				<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
+				<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens" class="img1">
 				<figcaption>
 					<h3>Le délice des sens</h3>
 					<p>Folie-Méricourt</p>
@@ -84,7 +100,7 @@
 			</figure>
 		</a>
 	</section>
-	<footer>
+	<footer class="white">
 		<h1>Oh my food</h1>
 		<ul>
 			<li>

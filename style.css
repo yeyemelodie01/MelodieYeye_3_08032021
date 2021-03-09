@@ -3,8 +3,16 @@ a {
   color: #000;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   background: #383838;
+}
+
+.white {
   color: #fff;
 }
 
@@ -12,39 +20,102 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+#info h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: 100;
+}
+
 h2, h3, p {
   font-family: "Roboto", sans-serif;
 }
 
-footer li {
-  color: #fff;
+h3, p {
+  margin: 0;
+}
+
+button {
+  padding: 10px;
+  border-radius: 19px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #9356DC linear-gradient(to top left, #9356DC, #FF79DA);
 }
 
 ul {
   list-style: none;
+  padding: 0 0 0 21px;
 }
 
 img {
-  width: 858px;
-  height: 400px;
+  width: 100%;
   object-fit: cover;
-}
-
-.container {
-  position: relative;
+  border-radius: 12px 12px 0 0;
 }
 
 span {
   background: #99E2D0;
   color: darkgreen;
-  padding: 1em;
-  border-radius: 15px;
+  padding: 8px;
+  border-radius: 3px;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  right: 58px;
-  top: 22px;
-  font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  #info {
+    text-align: center;
+  }
+
+  figcaption {
+    background: darkcyan;
+  }
+
+  .new {
+    position: relative;
+    bottom: 19px;
+  }
+
+  figcaption p {
+    float: left;
+  }
+
+  figcaption i {
+    position: relative;
+    bottom: 15px;
+    left: 150px;
+  }
+
+  figure {
+    margin: 0 20px 26px;
+  }
+
+  span {
+    position: relative;
+    bottom: 127px;
+    left: 191px;
+  }
+
+  .img1 {
+    width: 280px;
+    height: 142px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
