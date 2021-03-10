@@ -3,6 +3,9 @@
   footer {
     background: #383838;
   }
+  footer h1 {
+    color: #fff;
+  }
   footer a {
     color: #fff;
   }

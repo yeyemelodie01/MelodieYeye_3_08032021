@@ -1,5 +1,12 @@
-@media screen and (max-width: 480px){
+/* VARIABLE*/
+@media screen and (max-width: 480px) {
   /* GENERAL */
+  body {
+    width: 320px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+  }
+
   a {
     text-decoration: none;
     color: #000;
@@ -13,10 +20,6 @@
     font-weight: 100;
   }
 
-  h2, h3, p {
-    font-family: "Roboto", sans-serif;
-  }
-
   h3, p {
     margin: 0;
   }
@@ -26,13 +29,87 @@
     object-fit: cover;
   }
 
-  /* VARIABLE*/
-  #info {
-    text-align: center;
+  .bold {
+    font-weight: bold;
   }
 
+  /* INFOS */
+  #info {
+    text-align: center;
+    margin: 0px 15px;
+  }
   #info h1 {
+    margin-top: 40px;
     font-family: "Roboto", sans-serif;
+  }
+
+  #info div {
+    background: #f2f2f2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  #info div input {
+    border: none;
+    font-size: 17px;
+    padding: 16px;
+    width: 232px;
+    background: #f2f2f2;
+  }
+  #info div i {
+    padding-left: 51px;
+  }
+
+  /* FONTIONNEMENT */
+  #fonction {
+    margin: 0px 15px;
+  }
+  #fonction h2 {
+    font-weight: bold;
+  }
+  #fonction a {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+
+  ol {
+    padding-left: 26px;
+    margin: 31px 0 41px 0;
+  }
+  ol li {
+    background: darkcyan;
+    padding: 10px;
+    border-radius: 9px;
+    margin-bottom: 13px;
+  }
+
+  .two {
+    padding-right: 18px;
+  }
+
+  .three {
+    padding-right: 14px;
+  }
+
+  #restaurant {
+    margin: 0px 15px;
+  }
+  #restaurant figure {
+    margin: 0;
+  }
+  #restaurant .img1 {
+    height: 142px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+  }
+  figcaption i {
+    order: -1;
+    align-self: flex-end;
   }
 
   .bold {
@@ -42,9 +119,12 @@
   .bulle {
     background: #99E2D0;
     color: darkgreen;
-    padding: 8px;
+    padding: 4px 8px;
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
+    position: relative;
+    bottom: 136px;
+    left: 206px;
   }
 
   .imgmenu {

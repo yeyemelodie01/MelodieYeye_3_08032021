@@ -9,7 +9,9 @@ $black: #000;
 @media screen and (max-width: 480px){
   footer{
     background: #383838;
-
+    h1{
+      color: $white;
+    }
     a{
       color: $white;
     }
