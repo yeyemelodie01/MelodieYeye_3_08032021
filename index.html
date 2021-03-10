@@ -3,6 +3,7 @@
 <head>
 	<title>Oh my food</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="SASS/style.css">
 	<link rel="stylesheet" type="text/css" href="SASS/Layout/header.css">
 	<link rel="stylesheet" type="text/css" href="SASS/Layout/footer.css">
@@ -18,7 +19,10 @@
 		<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
 	</header>
 	<section id="info">
-		<i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Ville,pays..." name="localisation">
+		<div>
+			<i class="fas fa-map-marker-alt"></i>
+			<input type="search" placeholder="Ville,pays..." name="localisation">
+		</div>
 		<h1 class="bold">Réservez le menu qui <br> vous convient</h1>
 		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 		<button>Explorer nos restaurants</button>
@@ -28,16 +32,13 @@
 			<h2 class="bold">Fonctionnement</h2>
 			<ol>
 				<li>
-					<i class="fas fa-mobile-alt"></i>
-					<p>Choissisez un restaurant</p>
+					<a href="#"><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</a>
 				</li>
 				<li>
-					<i class="fas fa-list-ul"></i>
-					<p>Composez votre menu</p>
+					<a href="#" class="two"><i class="fas fa-list-ul"></i>Composez votre menu</a>
 				</li>
 				<li>
-					<i class="fas fa-store"></i>
-					<p>Degustez au restaurant</p>
+					<a href="#" class="three"><i class="fas fa-store"></i>Degustez au restaurant</a>
 				</li>
 			</ol>
 		</section>
