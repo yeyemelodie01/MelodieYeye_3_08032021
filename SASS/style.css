@@ -1,0 +1,55 @@
+@media screen and (max-width: 480px){
+  /* GENERAL */
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  h1 {
+    font-family: "Shrikhand", cursive;
+  }
+
+  h2 {
+    font-weight: 100;
+  }
+
+  h2, h3, p {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h3, p {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* VARIABLE*/
+  #info {
+    text-align: center;
+  }
+
+  #info h1 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .bulle {
+    background: #99E2D0;
+    color: darkgreen;
+    padding: 8px;
+    border-radius: 3px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .imgmenu {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

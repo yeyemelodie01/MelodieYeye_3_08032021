@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

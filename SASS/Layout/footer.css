@@ -1,0 +1,15 @@
+/* VARIABLE*/
+@media screen and (max-width: 480px) {
+  footer {
+    background: #383838;
+  }
+  footer a {
+    color: #fff;
+  }
+  footer ul {
+    list-style: none;
+    padding: 0 0 0 21px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
