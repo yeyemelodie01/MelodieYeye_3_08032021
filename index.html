@@ -3,7 +3,10 @@
 <head>
 	<title>Oh my food</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="SASS/style.css">
+	<link rel="stylesheet" type="text/css" href="SASS/Layout/header.css">
+	<link rel="stylesheet" type="text/css" href="SASS/Layout/footer.css">
+	<link rel="stylesheet" type="text/css" href="SASS/components/buttons.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -13,94 +16,79 @@
 <body>
 	<header>
 		<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
-		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Accueil</a>
-				</li>
-				<li>
-					<a href="lapalettedugout.html">La palette du goût</a>
-				</li>
-				<li>
-					<a href="lanoteenchantee.html">La note enchantée</a>
-				</li>
-				<li>
-					<a href="alafrancaise.html">À la française</a>
-				</li>
-				<li>
-					<a href="ledelicedessens.html">Les delices du sens</a>
-				</li>
-
-			</ul>
-		</nav>
 	</header>
 	<section id="info">
 		<i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Ville,pays..." name="localisation">
 		<h1 class="bold">Réservez le menu qui <br> vous convient</h1>
 		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-		<button class="white">Explorer nos restaurants</button>
+		<button>Explorer nos restaurants</button>
 	</section>
-	<section id="fonction">
-		<h2 class="bold">Fonctionnement</h2>
-		<ol>
-			<li>
-				<p><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</p>
-			</li>
-			<li>
-				<p><i class="fas fa-list-ul"></i>Composez votre menu</p>
-			</li>
-			<li>
-				<p><i class="fas fa-store"></i>Degustez au restaurant</p>
-			</li>
-		</ol>
-	</section>
-	<section id="restaurant">
-		<h2 class="bold">Restaurants</h2>
-		<a href="#">
-			<figure>
-					<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût" class="img1">
-					<span class="bold">Nouveau</span>
-				<figcaption class="new">
-					<h3>La palette du goût</h3>
-					<p>Ménilmonton</p>
-					<i class="far fa-heart"></i>
-				</figcaption>
-			</figure>
-		</a>
-		<a href="#">
-			<figure>
-				<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée" class="img1"
-				>
-				<span class="bold">Nouveau</span>
-				<figcaption  class="new">
-					<h3>La note enchantée</h3>
-					<p>Charonne</p>
-					<i class="far fa-heart"></i>
-				</figcaption>
-			</figure>
-		</a>
-		<a href="#">
-			<figure>
-				<img src="images/restaurants/alafrancaise.jpg" alt="À la Française" class="img1">
-				<figcaption>
-					<h3>À la Française</h3>
-					<p>Cité Rouge</p>
-					<i class="far fa-heart"></i>
-				</figcaption>
-			</figure>
-		</a>
-		<a href="#">
-			<figure>
-				<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens" class="img1">
-				<figcaption>
-					<h3>Le délice des sens</h3>
-					<p>Folie-Méricourt</p>
-					<i class="far fa-heart"></i>
-				</figcaption>
-			</figure>
-		</a>
-	</section>
-	<footer class="white">
+	<main>
+		<section id="fonction">
+			<h2 class="bold">Fonctionnement</h2>
+			<ol>
+				<li>
+					<i class="fas fa-mobile-alt"></i>
+					<p>Choissisez un restaurant</p>
+				</li>
+				<li>
+					<i class="fas fa-list-ul"></i>
+					<p>Composez votre menu</p>
+				</li>
+				<li>
+					<i class="fas fa-store"></i>
+					<p>Degustez au restaurant</p>
+				</li>
+			</ol>
+		</section>
+		<section id="restaurant">
+			<h2 class="bold">Restaurants</h2>
+			<a href="lapalettedugout.html">
+				<figure>
+						<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût" class="img1">
+						<span class="bold bulle">Nouveau</span>
+					<figcaption class="new">
+						<h3>La palette du goût</h3>
+						<p>Ménilmonton</p>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="lanoteenchantee.html">
+				<figure>
+					<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée" class="img1"
+					>
+					<span class="bold bulle">Nouveau</span>
+					<figcaption  class="new">
+						<h3>La note enchantée</h3>
+						<p>Charonne</p>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="alafrancaise.html">
+				<figure>
+					<img src="images/restaurants/alafrancaise.jpg" alt="À la Française" class="img1">
+					<figcaption>
+						<h3>À la Française</h3>
+						<p>Cité Rouge</p>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="ledelicedessens.html">
+				<figure>
+					<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens" class="img1">
+					<figcaption>
+						<h3>Le délice des sens</h3>
+						<p>Folie-Méricourt</p>
+						<i class="far fa-heart"></i>
+					</figcaption>
+				</figure>
+			</a>
+		</section>
+	</main>
+	<footer>
 		<h1>Oh my food</h1>
 		<ul>
 			<li>
