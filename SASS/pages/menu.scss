@@ -1,0 +1,80 @@
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+@media screen and (max-width: 480px){
+  main{
+    margin: 0px 15px;
+    h2{
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+  }
+  .page{
+      justify-content: flex-start;
+    a{
+      display: flex;
+      align-items: center;
+    }
+    img{
+      width: 140px;
+      height: 47px;
+    }
+    i{
+      margin: 0 18px;
+      margin-right: 40px;
+    }
+  }
+  .imgmenu{
+    height: 200px;
+  }
+
+  .titre{
+    height: 244px;
+    h1{
+      font-size: 22px;
+      margin: 0;
+      position: relative;
+      bottom: 35px;
+      background: white;
+      border-radius: 34px 34px 0 0;
+      padding: 26px 12px 12px 18px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .mets{
+    font-size: 14px;
+    margin-bottom: 48px;
+    i{
+      display: none;
+    }
+    p{
+      float: left;
+      font-size: 13px;
+    }
+  }
+  .plats{
+    background: darkcyan;
+    border-radius: 11px;
+    box-shadow: 8px 8px 10px #aaa;
+    padding: 12px 8px;
+    margin-bottom: 15px;
+  }
+  .barre{
+    background: $tertiary;
+    width: 35px;
+    height: 3px;
+    margin-bottom: 12px;
+  }
+  .plats{
+    h2{
+
+    }
+  }
+
+  .dessert{
+    h2{
+
+    }
+  }
+}
