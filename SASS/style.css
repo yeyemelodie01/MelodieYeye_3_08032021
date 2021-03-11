@@ -76,10 +76,10 @@
     padding-left: 10px;
     color: #0000009c;
   }
-  #fonction li:hover {
-    background: #9356DC;
+  #fonction li:active {
+    background: #9356DC4A;
   }
-  #fonction li:hover i {
+  #fonction li:active i {
     color: #9356DC;
   }
 

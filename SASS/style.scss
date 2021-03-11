@@ -80,8 +80,8 @@ $black: #000;
         color: #0000009c;
       }
     }
-    li:hover{
-      background: $primary;
+    li:active{
+      background: #9356DC4A;
       i{
         color: $primary;
       }
