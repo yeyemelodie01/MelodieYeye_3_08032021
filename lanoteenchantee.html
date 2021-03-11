@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="SASS/style.css">
 	<link rel="stylesheet" type="text/css" href="SASS/Layout/header.css">
 	<link rel="stylesheet" type="text/css" href="SASS/Layout/footer.css">
+	<link rel="stylesheet" type="text/css" href="SASS/pages/menu.css">
 	<link rel="stylesheet" type="text/css" href="SASS/components/buttons.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
@@ -15,84 +16,89 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 </head>
 <body>
-	<header>
+	<header class="page">
 		<a href="index.html"><i class="fas fa-arrow-left"></i></a>
 		<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
 	</header>
-	<div>
+	<div class="titre">
 		<img class="imgmenu" src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
-	</div>
-	<section>
 		<h1>La note enchantée<i class="far fa-heart"></i></h1>
-		<h2>ENTRÉES</h2>
-		<div>
-			<h3>Ravioles de foie gras</h3>
-			<p>Accompagnés de leur crème à la truffe</p>
-			<p>25€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Caviar osciètre</h3>
-			<p>Sur blini à la farine de blé noir</p>
-			<p>35€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Homard et espuma de potiron</h3>
-			<p>Mariné aux zestes d'orange</p>
-			<p>20€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Foie gras de canard cuit entier</h3>
-			<p>Confiture de figue et pain toasté</p>
-			<p>35€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-	</section>
-	<section>
-		<h2>PLATS</h2>
-		<div>
-			<h3>Noix de coquilles Saint-Jacques</h3>
-			<p>Sur lit de purée de céleri-rave</p>
-			<p>40€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Langoustine poêlée</h3>
-			<p>Purée de patate douce</p>
-			<p>35€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Mijoté de queue de boeuf</h3>
-			<p>Et riz sauvage aux zests de citron</p>
-			<p>44€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-	</section>
-	<section>
-		<h2>DESSERTS</h2>
-		<div>
-			<h3>Macaron noisette et chocolat</h3>
-			<p>Glace au caramel brun et sel de Guérande</p>
-			<p>18€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Baba au rhum revisité</h3>
-			<p>Avec son coulis de citron</p>
-			<p>22€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-		<div>
-			<h3>Tarte au citron meringuée</h3>
-			<p>Destructurée</p>
-			<p>23€</p>
-			<i class="fas fa-check-circle"></i>
-		</div>
-	</section>
-	<button>Commander</button>
+	</div>
+	<main>
+		<section class="mets">
+			<h2>ENTRÉES</h2>
+			<div class="barre"></div>
+			<div class="plats">
+				<h3>Ravioles de foie gras</h3>
+				<p>Accompagnés de leur crème à la truffe</p>
+				<span>25€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Caviar osciètre</h3>
+				<p>Sur blini à la farine de blé noir</p>
+				<span>35€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Homard et espuma de potiron</h3>
+				<p>Mariné aux zestes d'orange</p>
+				<span>20€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Foie gras de canard cuit entier</h3>
+				<p>Confiture de figue et pain toasté</p>
+				<span>35€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+		</section>
+		<section class="mets">
+			<h2>PLATS</h2>
+			<div class="barre"></div>
+			<div class="plats">
+				<h3>Noix de coquilles Saint-Jacques</h3>
+				<p>Sur lit de purée de céleri-rave</p>
+				<span>40€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Langoustine poêlée</h3>
+				<p>Purée de patate douce</p>
+				<span>35€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Mijoté de queue de boeuf</h3>
+				<p>Et riz sauvage aux zests de citron</p>
+				<span>44€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+		</section>
+		<section class="mets">
+			<h2>DESSERTS</h2>
+			<div class="barre"></div>
+			<div class="plats">
+				<h3>Macaron noisette et chocolat</h3>
+				<p>Glace au caramel brun et sel de Guérande</p>
+				<span>18€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Baba au rhum revisité</h3>
+				<p>Avec son coulis de citron</p>
+				<span>22€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+			<div class="plats">
+				<h3>Tarte au citron meringuée</h3>
+				<p>Destructurée</p>
+				<span>23€</span>
+				<i class="fas fa-check-circle"></i>
+			</div>
+		</section>
+		<button class="btn">Commander</button>
+	</main>
 	<footer>
 		<h1>Oh my food</h1>
 		<ul>
