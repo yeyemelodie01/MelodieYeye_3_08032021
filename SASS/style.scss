@@ -71,48 +71,106 @@ $black: #000;
     h2{
       font-weight: bold;
     }
-
     a{
       display: flex;
-      justify-content: space-around;
+      align-items: center;
       font-weight: bold;
+      i{
+        padding-left: 10px;
+        color: #0000009c;
+      }
+    }
+    li:hover{
+      background: $primary;
+      i{
+        color: $primary;
+      }
     }
   }
+  ol li:before{
+    content: counter(resto);
+    padding: 3px 7px 3px;
+    margin-right: -18px;
+    background: $primary;
+    -moz-border-radius: 60px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    position: relative;
+    right: 24px;
+  }
   ol{
-    padding-left: 26px;
-    margin: 31px 0 41px 0;
+    padding: 0;
+    margin: 31px 0 41px 9px;
+    counter-reset: resto;
+    list-style: none;
     li{
-      background: darkcyan;
-      padding: 10px;
-      border-radius: 9px;
+      padding: 15px;
+      border-radius: 16px;
       margin-bottom: 13px;
+      counter-increment: resto;
+      font-size: 16px;
+      display: flex;
+      box-shadow: 8px 8px 10px #aaa;
+    }
+  }
+  .one{
+    i{
+      padding-right: 22px;
     }
   }
   .two{
-    padding-right: 18px;
+    i{
+      padding-right: 17px;
+    }
   }
   .three{
-    padding-right: 14px;
+    i{
+      padding-right: 13px;
+    }
   }
   #restaurant{
     margin: $margin;
     figure{
       margin: 0;
+      margin-bottom: 35px;
+      box-shadow: 8px 8px 10px #aaa;
+      border-radius: 12px;
     }
-    .img1{
-      height: 142px;
+    img{
+      height: 130px;
       border-radius: 12px 12px 0 0;
+    }
+  }
+
+  .img1{
+    height: 187px;
+    figcaption{
+      position: relative;
+      bottom: 20px;
     }
   }
 
   figcaption{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 0 0 12px 12px;
+    padding: 7px 14px;
     i{
       order: -1;
-      align-self: flex-end;
+      align-self: center;
+      font-size: 18px;
+    }
+    div{
+      font-size: 14px;
+      h3{
+        margin-bottom: 2px;
+      }
     }
   }
+
   .bold{
     font-weight: bold;
   }
@@ -124,8 +182,8 @@ $black: #000;
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
     position: relative;
-    bottom: 136px;
-    left: 206px;
+    bottom: 124px;
+    left: 203px;
   }
 
   .imgmenu{

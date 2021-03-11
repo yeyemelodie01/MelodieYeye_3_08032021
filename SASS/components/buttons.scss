@@ -7,10 +7,12 @@ $white: #fff;
 $black: #000000;
 
 button{
-  padding: 10px;
+  padding: 12px 17px;
+  margin: 38px 0;
   border-radius: 19px;
   border: none;
+  font-size: 14px;
   color: $white;
-  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  box-shadow: 8px 8px 10px #aaa;
   background: linear-gradient(to top left, $primary, $secondary);
 }
