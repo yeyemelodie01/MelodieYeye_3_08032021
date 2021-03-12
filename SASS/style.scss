@@ -113,6 +113,13 @@ $black: #000;
       font-size: 16px;
       display: flex;
       box-shadow: 8px 8px 10px #aaa;
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+    }
+    li:active{
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
     }
   }
   .one{

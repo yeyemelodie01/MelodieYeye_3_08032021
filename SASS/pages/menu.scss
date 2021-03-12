@@ -3,7 +3,7 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 @media screen and (max-width: 480px){
   main{
-    margin: 0px 15px;
+    margin: 0 15px;
     h2{
       margin-bottom: 4px;
       font-size: 14px;
@@ -20,8 +20,7 @@ $tertiary: #99E2D0;
       height: 47px;
     }
     i{
-      margin: 0 18px;
-      margin-right: 40px;
+      margin: 0 40px 0 18px;
     }
   }
   .imgmenu{
@@ -45,20 +44,44 @@ $tertiary: #99E2D0;
   .mets{
     font-size: 14px;
     margin-bottom: 48px;
-    i{
+    .cache{
       display: none;
     }
+
     p{
-      float: left;
       font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 9px;
+    }
+    p:active .cache{
+      background: $tertiary;
+      display: block;
+      padding: 18px 13px 20px 13px;
+      position: relative;
+      bottom: 24px;
+      border-radius: 0 9px 9px 0;
+      color: white;
     }
   }
   .plats{
-    background: darkcyan;
+    height: 45px;
     border-radius: 11px;
     box-shadow: 8px 8px 10px #aaa;
-    padding: 12px 8px;
+    padding-bottom: 5px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 2s ease-in;
+      span{
+      font-weight: bold;
+      margin-right: 9px;
+      }
+    h3{
+      padding-top: 4px;
+      padding-left: 8px;
+    }
+
   }
   .barre{
     background: $tertiary;

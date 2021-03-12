@@ -15,6 +15,14 @@ $black: #000000;
     color: $white;
     box-shadow: 8px 8px 10px #aaa;
     background: linear-gradient(to top left, $primary, $secondary);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  button:active{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
   }
 
   .btn{
