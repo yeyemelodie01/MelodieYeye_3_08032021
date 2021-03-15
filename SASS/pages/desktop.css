@@ -8,7 +8,7 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 1.5s e infinite;
+  animation: spin 1.5s linear infinite;
   /* Placement du loader au mileu de la page */
   margin: auto;
   position: absolute;
