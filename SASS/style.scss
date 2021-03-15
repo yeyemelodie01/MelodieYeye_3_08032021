@@ -66,9 +66,14 @@ img{
       padding-left: 51px;
     }
   }
+  /* MAIN */
+  .container{
+    padding: 0;
+  }
 /* FONTIONNEMENT */
   #fonction{
-    margin: 0 15px;
+    margin: 0 10px;
+    width: 292px;
     h2{
       font-weight: bold;
     }
@@ -88,25 +93,35 @@ img{
       }
     }
   }
-  .one{
-    i{
-      padding-right: 22px;
+
+  #fonction ol{
+    display: block;
+      li:active{
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+      }
+    .one{
+      i{
+        padding-right: 22px;
+      }
     }
-  }
-  .two{
-    i{
-      padding-right: 17px;
+    .two{
+      i{
+        padding-right: 17px;
+      }
     }
-  }
-  .three{
-    i{
-      padding-right: 13px;
+    .three{
+      i{
+        padding-right: 13px;
+      }
     }
   }
 
+
+
   /* RESTAURANTS */
   #restaurant{
-    margin: 0 15px;
+    margin: 0 10px;
     figure{
       margin: 0;
       margin-bottom: 35px;
@@ -119,6 +134,8 @@ img{
       border-radius: 12px 12px 0 0;
     }
   }
+#restaurant{
+}
 
   .img1{
     height: 187px;
@@ -140,7 +157,6 @@ img{
       font-size: 18px;
     }
     div{
-      font-size: 14px;
       h3{
         margin-bottom: 2px;
       }

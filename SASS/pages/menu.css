@@ -53,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     padding-left: 9px;
+    font-weight: 300;
   }
   .mets p:active .cache {
     background: #99E2D0;

@@ -17,6 +17,10 @@ button{
   transition-timing-function: ease-out;
 }
 
+button:focus{
+  outline: none;
+}
+
 @media screen and (min-width:1025px){
   button:hover{
     transform: scale(1.2);

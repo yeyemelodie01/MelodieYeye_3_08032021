@@ -65,9 +65,15 @@ img {
     padding-left: 51px;
   }
 
+  /* MAIN */
+  .container {
+    padding: 0;
+  }
+
   /* FONTIONNEMENT */
   #fonction {
-    margin: 0 15px;
+    margin: 0 10px;
+    width: 292px;
   }
   #fonction h2 {
     font-weight: bold;
@@ -88,21 +94,26 @@ img {
     color: #9356DC;
   }
 
-  .one i {
+  #fonction ol {
+    display: block;
+  }
+  #fonction ol li:active {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+  #fonction ol .one i {
     padding-right: 22px;
   }
-
-  .two i {
+  #fonction ol .two i {
     padding-right: 17px;
   }
-
-  .three i {
+  #fonction ol .three i {
     padding-right: 13px;
   }
 
   /* RESTAURANTS */
   #restaurant {
-    margin: 0 15px;
+    margin: 0 10px;
   }
   #restaurant figure {
     margin: 0;
@@ -135,9 +146,6 @@ img {
     order: -1;
     align-self: center;
     font-size: 18px;
-  }
-  figcaption div {
-    font-size: 14px;
   }
   figcaption div h3 {
     margin-bottom: 2px;
