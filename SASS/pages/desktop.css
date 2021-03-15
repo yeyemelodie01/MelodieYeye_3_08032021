@@ -51,6 +51,8 @@ ol {
   margin: 31px 0 41px 9px;
   counter-reset: resto;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 ol li {
   padding: 15px;
@@ -79,6 +81,10 @@ ol li:before {
   right: 24px;
 }
 
+#fontion a i {
+  padding-left: 17px;
+}
+
 /* RESTAURANTS */
 #restaurant .content {
   display: flex;
@@ -87,14 +93,14 @@ ol li:before {
 }
 #restaurant figure {
   width: 290px;
-  margin: 0;
-  margin-bottom: 35px;
+  height: 213px;
+  margin: 0 52px 35px 0;
   box-shadow: 8px 8px 10px #aaa;
   border-radius: 12px;
 }
 #restaurant img {
   width: 290px;
-  height: 130px;
+  height: 150px;
   border-radius: 12px 12px 0 0;
 }
 
@@ -129,7 +135,7 @@ figcaption div h3 {
   border-radius: 3px;
   font-family: "Roboto", sans-serif;
   position: relative;
-  bottom: 124px;
+  bottom: 142px;
   left: 203px;
 }
 
