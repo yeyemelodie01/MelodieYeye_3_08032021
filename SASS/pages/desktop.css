@@ -1,0 +1,136 @@
+/* GENERAL */
+img {
+  width: 300px;
+  height: 200px;
+}
+
+/* INFOS */
+#info {
+  text-align: center;
+  margin: 0 15px;
+}
+#info h1 {
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+#info div {
+  background: #f2f2f2;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+#info div input {
+  border: none;
+  font-size: 17px;
+  padding: 16px;
+  width: 232px;
+  background: #f2f2f2;
+}
+#info div i {
+  padding-left: 51px;
+}
+
+/* FONCTIONNEMENT */
+@media screen and (min-width: 1025px) {
+  #fonction li:hover {
+    background: #9356DC4A;
+  }
+
+  #fonction li:hover i {
+    color: #9356DC;
+  }
+
+  ol li:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+}
+ol {
+  padding: 0;
+  margin: 31px 0 41px 9px;
+  counter-reset: resto;
+  list-style: none;
+}
+ol li {
+  padding: 15px;
+  border-radius: 16px;
+  margin-bottom: 13px;
+  counter-increment: resto;
+  font-size: 16px;
+  display: flex;
+  box-shadow: 8px 8px 10px #aaa;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+ol li:before {
+  content: counter(resto);
+  padding: 3px 7px 3px;
+  margin-right: -18px;
+  background: #9356DC;
+  -moz-border-radius: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #fff;
+  position: relative;
+  right: 24px;
+}
+
+/* RESTAURANTS */
+#restaurant .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#restaurant figure {
+  width: 290px;
+  margin: 0;
+  margin-bottom: 35px;
+  box-shadow: 8px 8px 10px #aaa;
+  border-radius: 12px;
+}
+#restaurant img {
+  width: 290px;
+  height: 130px;
+  border-radius: 12px 12px 0 0;
+}
+
+.img1 figcaption {
+  position: relative;
+  bottom: 20px;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 0 0 12px 12px;
+  padding: 7px 14px;
+}
+figcaption i {
+  order: -1;
+  align-self: center;
+  font-size: 18px;
+}
+figcaption div {
+  font-size: 14px;
+}
+figcaption div h3 {
+  margin-bottom: 2px;
+}
+
+.bulle {
+  background: #99E2D0;
+  color: darkgreen;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  bottom: 124px;
+  left: 203px;
+}
+
+/*# sourceMappingURL=desktop.css.map */
