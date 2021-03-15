@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="SASS/style.css">
+	<link rel="stylesheet" type="text/css" href="SASS/pages/desktop.css">
 	<link rel="stylesheet" type="text/css" href="SASS/Layout/header.css">
 	<link rel="stylesheet" type="text/css" href="SASS/Layout/footer.css">
 	<link rel="stylesheet" type="text/css" href="SASS/components/buttons.css">
@@ -17,14 +18,16 @@
 <body>
 	<div id="loader"></div>
 	<header>
-		<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
+		<h1>
+			<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
+		</h1>
 	</header>
 	<section id="info">
 		<div>
 			<i class="fas fa-map-marker-alt"></i>
 			<input type="search" placeholder="Ville,pays..." name="localisation">
 		</div>
-		<h1 class="bold">Réservez le menu qui <br> vous convient</h1>
+		<h2 class="bold">Réservez le menu qui <br> vous convient</h2>
 		<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 		<button>Explorer nos restaurants</button>
 	</section>
@@ -45,56 +48,58 @@
 		</section>
 		<section id="restaurant">
 			<h2 class="bold">Restaurants</h2>
-			<a href="lapalettedugout.html">
-				<figure class="img1">
-						<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
+			<div class="content">
+				<a href="lapalettedugout.html">
+					<figure class="img1">
+							<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
+							<span class="bold bulle">Nouveau</span>
+						<figcaption class="new">
+							<div>
+								<h3>La palette du goût</h3>
+								<p>Ménilmonton</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="lanoteenchantee.html">
+					<figure class="img1">
+						<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
 						<span class="bold bulle">Nouveau</span>
-					<figcaption class="new">
-						<div>
-							<h3>La palette du goût</h3>
-							<p>Ménilmonton</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="lanoteenchantee.html">
-				<figure class="img1">
-					<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
-					<span class="bold bulle">Nouveau</span>
-					<figcaption  class="new">
-						<div>
-							<h3>La note enchantée</h3>
-							<p>Charonne</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="alafrancaise.html">
-				<figure>
-					<img src="images/restaurants/alafrancaise.jpg" alt="À la Française">
-					<figcaption>
-						<div>
-							<h3>À la Française</h3>
-							<p>Cité Rouge</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="ledelicedessens.html">
-				<figure>
-					<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
-					<figcaption>
-						<div>
-							<h3>Le délice des sens</h3>
-							<p>Folie-Méricourt</p>
-						</div>
-						<i class="far fa-heart"></i>
-					</figcaption>
-				</figure>
-			</a>
+						<figcaption  class="new">
+							<div>
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="alafrancaise.html">
+					<figure>
+						<img src="images/restaurants/alafrancaise.jpg" alt="À la Française">
+						<figcaption>
+							<div>
+								<h3>À la Française</h3>
+								<p>Cité Rouge</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="ledelicedessens.html">
+					<figure>
+						<img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
+						<figcaption>
+							<div>
+								<h3>Le délice des sens</h3>
+								<p>Folie-Méricourt</p>
+							</div>
+							<i class="far fa-heart"></i>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
 		</section>
 	</main>
 	<footer>
