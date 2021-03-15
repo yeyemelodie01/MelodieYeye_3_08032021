@@ -1,4 +1,35 @@
 /* GENERAL */
+#loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #9356DC;
+  border-right: 10px solid #99E2D0;
+  border-bottom: 10px solid #9356DC;
+  border-left: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+  /* Placement du loader au mileu de la page */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.chargement {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 img {
   width: 300px;
   height: 200px;
