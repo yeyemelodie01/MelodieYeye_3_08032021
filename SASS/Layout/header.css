@@ -1,3 +1,13 @@
+/* GENERAL */
+header {
+  display: flex;
+}
+
+.logo {
+  height: 70px;
+  object-fit: contain;
+}
+
 @media screen and (max-width: 480px) {
   header {
     display: flex;

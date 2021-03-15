@@ -1,47 +1,48 @@
 /* VARIABLE*/
-$margin: 0px 15px;
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
-$white: #fff;
-$black: #000;
+/* GENERAL */
+body{
+  width: 1024PX;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+h1{
+  font-family: 'Shrikhand', cursive;
+}
+
+h2{
+  font-weight: 100;
+}
+
+h3,p{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.bold{
+  font-weight: bold;
+}
 @media screen and (max-width: 480px){
   /* GENERAL */
   body{
     width: 320px;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
   }
-
-  a{
-    text-decoration: none;
-    color: #000;
-  }
-
-  h1{
-    font-family: 'Shrikhand', cursive;
-  }
-
-  h2{
-    font-weight: 100;
-  }
-
-  h3,p{
-    margin: 0;
-  }
-
-  img{
-    width: 100%;
-    object-fit: cover;
-  }
-  .bold{
-    font-weight: bold;
-  }
-
   /* INFOS */
   #info{
     text-align: center;
-    margin: $margin;
+    margin: 0 15px;
     h1{
       margin-top: 40px;
       font-family: 'Roboto', sans-serif;
@@ -67,7 +68,7 @@ $black: #000;
   }
 /* FONTIONNEMENT */
   #fonction{
-    margin: $margin;
+    margin: 0 15px;
     h2{
       font-weight: bold;
     }
@@ -87,41 +88,6 @@ $black: #000;
       }
     }
   }
-  ol li:before{
-    content: counter(resto);
-    padding: 3px 7px 3px;
-    margin-right: -18px;
-    background: $primary;
-    -moz-border-radius: 60px;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 0.8em;
-    color: white;
-    position: relative;
-    right: 24px;
-  }
-  ol{
-    padding: 0;
-    margin: 31px 0 41px 9px;
-    counter-reset: resto;
-    list-style: none;
-    li{
-      padding: 15px;
-      border-radius: 16px;
-      margin-bottom: 13px;
-      counter-increment: resto;
-      font-size: 16px;
-      display: flex;
-      box-shadow: 8px 8px 10px #aaa;
-      transition-property: transform;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-out;
-    }
-    li:active{
-      transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-    }
-  }
   .one{
     i{
       padding-right: 22px;
@@ -137,8 +103,10 @@ $black: #000;
       padding-right: 13px;
     }
   }
+
+  /* RESTAURANTS */
   #restaurant{
-    margin: $margin;
+    margin: 0 15px;
     figure{
       margin: 0;
       margin-bottom: 35px;
@@ -146,6 +114,7 @@ $black: #000;
       border-radius: 12px;
     }
     img{
+      width: 290px;
       height: 130px;
       border-radius: 12px 12px 0 0;
     }
@@ -177,21 +146,4 @@ $black: #000;
       }
     }
   }
-
-  .bold{
-    font-weight: bold;
-  }
-
-  .bulle{
-    background: $tertiary;
-    color: darkgreen;
-    padding: 4px 8px;
-    border-radius: 3px;
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    bottom: 124px;
-    left: 203px;
-  }
-
-
 }
