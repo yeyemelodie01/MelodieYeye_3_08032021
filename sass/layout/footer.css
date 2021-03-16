@@ -16,6 +16,9 @@ footer ul {
   padding: 0 0 12px 21px;
   margin-bottom: 0;
 }
+footer ul li {
+  margin-bottom: 12px;
+}
 footer .coms i {
   margin-right: 12px;
 }

@@ -17,6 +17,9 @@ footer {
     list-style: none;
     padding: 0 0 12px 21px;
     margin-bottom: 0;
+    li{
+      margin-bottom: 12px;
+    }
   }
   .coms{
     i{
@@ -29,6 +32,7 @@ footer {
     }
   }
 }
+
 @media screen and (max-width: 480px){
   footer{
     a{
