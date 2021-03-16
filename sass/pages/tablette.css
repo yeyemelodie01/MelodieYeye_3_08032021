@@ -1,3 +1,33 @@
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
 
+  #fonction li:active {
+    background: #9356DC4A;
+  }
+
+  #fonction li:active i {
+    color: #9356DC;
+  }
+
+  ol {
+    margin-left: 0;
+  }
+  ol li {
+    font-size: 13px;
+  }
+  ol li:active {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+
+  #restaurant .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 /*# sourceMappingURL=tablette.css.map */
