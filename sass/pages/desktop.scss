@@ -2,6 +2,12 @@
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
+$lightgreen:#99E2D0;
+$darkgreen: #004b00;
+$black: #000;
+$shadow: #aaa;
+$white: #fff;
+$lightgray: #f2f2f2;
 #loader{
   border: 3px solid transparent;
   border-top-color: $primary;
@@ -71,24 +77,26 @@ img{
   height: 200px;
 }
 /* INFOS */
-#info{
+.section__infos{
   text-align: center;
   margin: 0 15px;
-  h1{
+  .section__infos--bold{
+    font-weight: bold;
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
   }
 }
 
-#info div{
-  background: #f2f2f2;
-  height: 60px;
+.section__infos{
+  div{
+    background: $lightgray;
+  }
   input{
     border: none;
     font-size: 17px;
     padding: 16px;
     width: 334px;
-    background: #f2f2f2;
+    background: $lightgray;
   }
   input:focus{
     outline:none;
@@ -99,30 +107,40 @@ img{
 }
 /* MAIN*/
 main {
-  padding: 0 22px;
+  padding: 0 14px;
 }
   /* FONCTIONNEMENT */
   @media screen and (min-width: 1025px){
-    #fonction li:hover {
-      background: #9356DC4A;
-    }
-    #fonction li:hover i {
-      color: #9356DC;
-    }
-    ol{
-      li:hover{
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
+    .section{
+      ol{
+        li:hover{
+          background: #9356DC4A;
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+        }
+        li:hover i {
+          color: $primary;
+          opacity: 1;
+        }
       }
     }
-    #restaurant{
-      .content {
+    .section-prev{
+      .section-prev__content{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
       }
     }
+    .section__infos {
+      div {
+        margin: 0 147px;
+      }
+    }
   }
+.section__title{
+  font-weight: bold;
+}
+.section{
   ol{
     padding: 0;
     margin: 31px 0 41px 9px;
@@ -137,13 +155,13 @@ main {
       counter-increment: resto;
       font-size: 16px;
       display: flex;
-      box-shadow: 8px 8px 10px #aaa;
+      box-shadow: 8px 8px 10px $shadow;
       transition-property: transform;
       transition-duration: 0.5s;
       transition-timing-function: ease-out;
     }
   }
-  ol li:before{
+  li:before{
     content: counter(resto);
     padding: 3px 7px 3px;
     margin-right: -18px;
@@ -152,23 +170,50 @@ main {
     border-radius: 50%;
     font-weight: bold;
     font-size: 0.8em;
-    color: #fff;
+    color: $white;
     position: relative;
     right: 24px;
   }
-  .one{
+}
+  .section__list-link a {
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    i{
-      padding: 0 22px 0 10px;
+  }
+  .section__list-items1 {
+    i {
+      padding-right: 22px;
+      padding-left: 10px;
+      opacity: 0.4;
     }
   }
+
+  .section__list-items2 {
+    i {
+      padding-right: 17px;
+      padding-left: 10px;
+      opacity: 0.4;
+    }
+  }
+
+  .section__list-items3 {
+    i {
+      padding-right: 13px;
+      padding-left: 10px;
+      opacity: 0.4;
+    }
+  }
+
+
+
+
   /* RESTAURANTS */
-  #restaurant{
+.section-prev{
     figure{
       width: 290px;
       height: 213px;
       margin: 0 0 35px 0;
-      box-shadow: 8px 8px 10px #aaa;
+      box-shadow: 8px 8px 10px $shadow;
       border-radius: 12px;
     }
     img{
@@ -176,16 +221,37 @@ main {
       height: 150px;
       border-radius: 12px 12px 0 0;
     }
-  }
+    .section-prev__content-items{
+      background: $lightgreen;
+      color: $darkgreen;
+      padding: 4px 8px;
+      border-radius: 3px;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      bottom: 142px;
+      left: 203px;
+    }
+}
 
-  .img1{
+.section-prev__title{
+  font-weight: bold;
+}
+
+.section-prev__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-prev__content-element{
     figcaption{
       position: relative;
       bottom: 20px;
     }
-  }
+}
 
-  figcaption{
+figcaption{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -202,16 +268,4 @@ main {
         margin-bottom: 2px;
       }
     }
-  }
-  #restaurant{
-    .bulle {
-    background: #99E2D0;
-    color: darkgreen;
-    padding: 4px 8px;
-    border-radius: 3px;
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    bottom: 142px;
-    left: 203px;
-  }
 }

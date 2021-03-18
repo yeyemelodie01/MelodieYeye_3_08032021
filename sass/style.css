@@ -39,98 +39,71 @@ img {
   }
 
   /* INFOS */
-  #info {
+  .section__infos {
     text-align: center;
     margin: 0 15px;
   }
-  #info h1 {
+  .section__infos .section__infos--bold {
     margin-top: 40px;
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  .section__infos div {
+    margin: 0;
   }
 
-  #info div {
-    background: #f2f2f2;
+  .section__infos-content {
     height: 60px;
     display: flex;
     align-items: center;
+    position: static;
   }
-  #info div input {
+  .section__infos-content input {
     border: none;
     font-size: 17px;
     padding: 16px;
-    width: 232px;
+    padding-right: 0;
+    width: 228px;
     background: #f2f2f2;
   }
-  #info div i {
+  .section__infos-content i {
     padding-left: 51px;
   }
 
   /* MAIN */
-  .container {
-    padding: 0;
-  }
-
   /* FONTIONNEMENT */
-  #fonction {
-    margin: 0 10px;
+  .section {
     width: 292px;
   }
-  #fonction h2 {
-    font-weight: bold;
-  }
-  #fonction a {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-  }
-  #fonction a i {
-    padding-left: 10px;
-    color: #0000009c;
-  }
-  #fonction li:active {
+  .section .section__list-link:active {
     background: #9356DC4A;
-  }
-  #fonction li:active i {
-    color: #9356DC;
-  }
-
-  #fonction ol {
-    display: block;
-  }
-  #fonction ol li:active {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
   }
-  #fonction ol .one i {
-    padding-right: 22px;
+  .section .section__list-link:active i {
+    color: #9356DC;
+    opacity: 1;
   }
-  #fonction ol .two i {
-    padding-right: 17px;
-  }
-  #fonction ol .three i {
-    padding-right: 13px;
+  .section .section__list-block {
+    display: block;
   }
 
   /* RESTAURANTS */
-  #restaurant {
-    margin: 0 10px;
-  }
-  #restaurant figure {
-    margin: 0;
-    margin-bottom: 35px;
+  .section-prev figure {
+    margin: 0 0 35px;
     box-shadow: 8px 8px 10px #aaa;
     border-radius: 12px;
   }
-  #restaurant img {
+  .section-prev img {
     width: 290px;
     height: 130px;
     border-radius: 12px 12px 0 0;
   }
 
-  .img1 {
+  .section-prev__content-element {
     height: 187px;
   }
-  .img1 figcaption {
+  .section-prev__content-element figcaption {
     position: relative;
     bottom: 20px;
   }

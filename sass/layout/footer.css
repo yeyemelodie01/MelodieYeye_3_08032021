@@ -1,36 +1,39 @@
 /* VARIABLE*/
 /* GENERALE */
-footer {
+.footer {
   background: #383838;
 }
-footer h1 {
+.footer .footer__title {
   color: #fff;
   padding-left: 21px;
   padding-top: 18px;
 }
-footer a {
+.footer a {
   color: #fff;
 }
-footer ul {
+.footer .footer__list-bold {
+  font-weight: bold;
+}
+.footer .footer__list {
   list-style: none;
   padding: 0 0 12px 21px;
   margin-bottom: 0;
 }
-footer ul li {
+.footer .footer__list li {
   margin-bottom: 12px;
 }
-footer .coms i {
-  margin-right: 12px;
-}
-footer .coms1 i {
+.footer .footer__list-items1 i {
   margin-right: 18px;
+}
+.footer .footer__list-items2 i {
+  margin-right: 12px;
 }
 
 @media screen and (max-width: 480px) {
   footer a {
     font-size: 14px;
   }
-  footer ul li {
+  footer .footer__list li {
     margin-bottom: 4px;
   }
 }

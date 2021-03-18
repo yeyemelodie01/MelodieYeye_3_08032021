@@ -21,42 +21,43 @@
 <body>
 	<div id="loader"></div>
 	<div id="content" class="chargement">
-		<header>
+
+		<header class="header">
 			<h1>
 				<img src="images/logo/ohmyfood@2x.svg" class="logo" alt="Oh my food">
 			</h1>
 		</header>
-		<section id="info">
-			<div>
+		<section class="section__infos">
+			<div class="section__infos-content">
 				<i class="fas fa-map-marker-alt"></i>
-				<input type="search" placeholder="Ville,pays..." name="localisation">
+				<input type="search" placeholder="Ville,pays..." name="localisation" label="">
 			</div>
-			<h2 class="bold">Réservez le menu qui <br> vous convient</h2>
+			<h2 class="section__infos--bold">Réservez le menu qui <br> vous convient</h2>
 			<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 			<button>Explorer nos restaurants</button>
 		</section>
-		<main class="container">
-			<section id="fonction">
-				<h2 class="bold">Fonctionnement</h2>
-				<ol>
-					<li>
-						<a href="#" class="one"><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</a>
+		<main>
+			<section id="fonction" class="section">
+				<h2 class="section__title">Fonctionnement</h2>
+				<ol class="section__list-block">
+					<li class="section__list-link ">
+						<a href="#" class="section__list-items1"><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</a>
 					</li>
-					<li>
-						<a href="#" class="one two"><i class="fas fa-list-ul"></i>Composez votre menu</a>
+					<li class="section__list-link">
+						<a href="#" class="section__list-items2"><i class="fas fa-list-ul"></i>Composez votre menu</a>
 					</li>
-					<li>
-						<a href="#" class="one three"><i class="fas fa-store"></i>Degustez au restaurant</a>
+					<li class="section__list-link">
+						<a href="#" class="section__list-items3"><i class="fas fa-store"></i>Degustez au restaurant</a>
 					</li>
 				</ol>
 			</section>
-			<section id="restaurant">
-				<h2 class="bold">Restaurants</h2>
-				<div class="content mobile">
+			<section id="restaurant" class="section-prev">
+				<h2 class="section-prev__title">Restaurants</h2>
+				<div class="section-prev__content">
 					<a href="lapalettedugout.html">
-						<figure class="img1">
+						<figure class="section-prev__content-element">
 								<img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût">
-								<span class="bold bulle">Nouveau</span>
+								<span class="section-prev__content-items">Nouveau</span>
 							<figcaption class="new">
 								<div>
 									<h3>La palette du goût</h3>
@@ -67,10 +68,10 @@
 						</figure>
 					</a>
 					<a href="lanoteenchantee.html">
-						<figure class="img1">
+						<figure class="section-prev__content-element">
 							<img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
-							<span class="bold bulle">Nouveau</span>
-							<figcaption  class="new">
+							<span class="section-prev__content-items">Nouveau</span>
+							<figcaption class="section-prev__content-items-">
 								<div>
 									<h3>La note enchantée</h3>
 									<p>Charonne</p>
@@ -106,19 +107,19 @@
 				</div>
 			</section>
 		</main>
-		<footer>
-			<h1>Ohmyfood</h1>
-			<ul>
-				<li>
-					<a href="#" class="coms1 bold"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+		<footer class="footer">
+			<h1 class="footer__title">Ohmyfood</h1>
+			<ul class="footer__list">
+				<li class="footer__list-content">
+					<a href="#" class="footer__list-items1 footer__list-bold"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
 				</li>
-				<li>
-					<a href="#" class="coms bold"><i class="fas fa-hands-helping"></i>Devenir Partenaire</a>
+				<li class="footer__list-content">
+					<a href="#" class="footer__list-items2 footer__list-bold"><i class="fas fa-hands-helping"></i>Devenir Partenaire</a>
 				</li>
-				<li>
+				<li class="footer__list-content">
 					<a href="#">Mentions legales</a>
 				</li>
-				<li>
+				<li class="footer__list-content">
 					<a href="mailto:yeyemelodie@outlook.fr">Contact</a>
 				</li>
 			</ul>

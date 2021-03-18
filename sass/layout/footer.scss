@@ -2,18 +2,22 @@
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
+$white: #fff;
 /* GENERALE */
-footer {
+.footer{
   background: #383838;
-  h1{
-    color: #fff;
+  .footer__title{
+    color: $white;
     padding-left: 21px;
     padding-top: 18px;
   }
   a{
-    color: #fff;
+    color: $white;
   }
-  ul{
+  .footer__list-bold{
+    font-weight: bold;
+  }
+  .footer__list{
     list-style: none;
     padding: 0 0 12px 21px;
     margin-bottom: 0;
@@ -21,14 +25,14 @@ footer {
       margin-bottom: 12px;
     }
   }
-  .coms{
-    i{
-      margin-right: 12px;
-    }
-  }
-  .coms1{
+  .footer__list-items1{
     i{
       margin-right: 18px;
+    }
+  }
+  .footer__list-items2{
+    i{
+      margin-right: 12px;
     }
   }
 }
@@ -38,7 +42,7 @@ footer {
     a{
       font-size: 14px;
     }
-    ul{
+    .footer__list{
       li{
         margin-bottom: 4px;
       }
