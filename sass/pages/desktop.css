@@ -125,7 +125,7 @@ main {
   }
 
   .section__infos div {
-    margin: 0 147px;
+    margin: 0 264px;
   }
 }
 .section__title {
@@ -197,6 +197,9 @@ main {
   margin: 0 0 35px 0;
   box-shadow: 8px 8px 10px #aaa;
   border-radius: 12px;
+}
+.section-prev figure p {
+  font-weight: 300;
 }
 .section-prev img {
   width: 290px;

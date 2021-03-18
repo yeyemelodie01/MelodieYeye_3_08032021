@@ -133,7 +133,7 @@ main {
     }
     .section__infos {
       div {
-        margin: 0 147px;
+        margin: 0 264px;
       }
     }
   }
@@ -215,6 +215,9 @@ main {
       margin: 0 0 35px 0;
       box-shadow: 8px 8px 10px $shadow;
       border-radius: 12px;
+      p{
+        font-weight: 300;
+      }
     }
     img{
       width: 290px;
