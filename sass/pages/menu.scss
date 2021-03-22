@@ -20,6 +20,9 @@ $white: #fff;
 
 main{
   margin: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   h2{
     margin-bottom: 4px;
     font-size: 14px;
@@ -47,6 +50,7 @@ main{
 .mets{
   font-size: 14px;
   margin-bottom: 48px;
+  margin-right: 28px;
   .cache{
     display: none;
     transition: all 1.5s ease-in-out;
