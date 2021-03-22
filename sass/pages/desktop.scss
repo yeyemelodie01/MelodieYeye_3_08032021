@@ -8,70 +8,7 @@ $black: #000;
 $shadow: #aaa;
 $white: #fff;
 $lightgray: #f2f2f2;
-#loader{
-  border: 3px solid transparent;
-  border-top-color: $primary;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
 
-  /* Placement du loader au mileu de la page */
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-#loader:after{
-  content: '';
-  position: absolute;
-  top: 15px;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  border: 3px solid transparent;
-  border-top-color: $tertiary;
-  border-radius: 50px;
-  opacity: 0.6;
-  animation: spin 10s linear infinite;
-  -webkit-animation: spin 10s linear infinite;
-}
-
-#loader:before{
-  content: '';
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  border: 3px solid transparent;
-  border-top-color: $secondary;
-  border-radius: 50px;
-  opacity: 0.6;
-  animation: spin 5s linear infinite;
-  -webkit-animation: spin 5s linear infinite;
-}
-
-.chargement{
-  display: none;
-}
-
-@-webkit-keyframes spin {
-  0%{ -webkit-transform: rotate(0deg); transform: rotate(0deg);}
-  100%{-webkit-transform: rotate(360deg); transform: rotate(360deg);}
-}
-@keyframes spin{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
 img{
   width: 300px;
   height: 200px;

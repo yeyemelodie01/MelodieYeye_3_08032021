@@ -46,6 +46,10 @@ main h2 {
 }
 .mets .cache {
   display: none;
+  transition: all 1.5s ease-in-out;
+}
+.mets .rotateZ:hover {
+  transform: rotateZ(180deg);
 }
 .mets p {
   font-size: 13px;
@@ -54,13 +58,14 @@ main h2 {
   padding-left: 9px;
   font-weight: 300;
 }
-.mets p:active .cache {
+.mets p:hover .cache {
   background: #99E2D0;
   display: block;
   padding: 18px 13px 20px 13px;
   position: relative;
   bottom: 24px;
   border-radius: 0 9px 9px 0;
+  transform: rotateZ(180deg);
   color: #fff;
 }
 
