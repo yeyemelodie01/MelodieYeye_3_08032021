@@ -3,6 +3,7 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $shadow: #aaa;
 $white: #fff;
+$black:#000;
 .page{
   display: flex;
   justify-content: flex-start;
@@ -45,6 +46,31 @@ main{
     padding: 26px 12px 12px 18px;
     display: flex;
     justify-content: space-between;
+  }
+  .fa-heart{
+    cursor: pointer;
+    margin-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 25px;
+    color: $black;
+  }
+
+  .degrade:hover{
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+  }
+
+  @keyframes prog {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 .mets{
@@ -165,6 +191,13 @@ main{
       padding: 26px 12px 12px 18px;
       display: flex;
       justify-content: space-between;
+    }
+    .degrade:hover{
+      font-weight: bold;
+      background: -webkit-linear-gradient(0deg, $primary, $secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: prog 2s forwards;
     }
   }
   .mets{

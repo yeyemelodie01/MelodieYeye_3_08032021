@@ -63,8 +63,7 @@ img{
     input{
       border: none;
       font-size: 17px;
-      padding: 16px;
-      padding-right: 0;
+      padding: 16px 0 16px 16px;
       width: 228px;
       background: $ligthgray;
     }
@@ -119,15 +118,16 @@ img{
     justify-content: space-between;
     border-radius: 0 0 12px 12px;
     padding: 7px 14px;
-    i{
-      order: -1;
-      align-self: center;
-      font-size: 18px;
-    }
-    div{
+    div {
       h3{
         margin-bottom: 2px;
       }
     }
   }
+  i{
+    order: -1;
+    align-self: center;
+    font-size: 18px;
+  }
+
 }
