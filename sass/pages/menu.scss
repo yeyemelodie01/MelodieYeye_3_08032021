@@ -95,6 +95,29 @@ main{
     padding-left: 8px;
   }
 }
+
+.plats__transition1{
+  animation: slideDown 1.5s forwards;
+}
+
+.plats__transition2{
+  animation: slideDown 2s forwards;
+}
+
+.plats__transition3{
+  animation: slideDown 2.5s forwards;
+}
+
+@keyframes slideDown {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .barre{
   background: $tertiary;
   width: 35px;
