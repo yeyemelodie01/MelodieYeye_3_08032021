@@ -33,8 +33,6 @@ button:focus {
 @media screen and (max-width: 480px) {
   .btn {
     padding: 12px 33px;
-    position: relative;
-    left: 69px;
     margin-top: 0;
   }
 

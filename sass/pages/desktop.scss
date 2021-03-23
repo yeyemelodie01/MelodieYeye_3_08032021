@@ -73,6 +73,14 @@ main {
         margin: 0 264px;
       }
     }
+    .degrade:hover {
+      font-weight: bold;
+      background: -webkit-linear-gradient(0deg, $primary, $secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: prog 2s forwards;
+      -webkit-animation: prog 2s forwards;
+    }
   }
 .section__title{
   font-weight: bold;
@@ -212,14 +220,6 @@ figcaption{
   margin-top: 10px;
   padding-left: 7px;
   padding-right: 7px;
-}
-.degrade:hover {
-  font-weight: bold;
-  background: -webkit-linear-gradient(0deg, $primary, $secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: prog 2s forwards;
-  -webkit-animation: prog 2s forwards;
 }
 @-webkit-keyframes prog {
   0% {

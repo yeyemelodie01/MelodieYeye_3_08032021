@@ -96,20 +96,25 @@ img{
 
   /* RESTAURANTS */
   .section-prev{
-    figure{
-      margin: 0 0 35px;
-      box-shadow: 8px 8px 10px $shadow;
-      border-radius: 12px;
-    }
-    img{
+    .section-prev__content-element{
       width: 290px;
-      height: 130px;
-      border-radius: 12px 12px 0 0;
+      height: 187px;
+      img{
+        width: 290px;
+        height: 130px;
+        border-radius: 12px 12px 0 0;
+      }
     }
-  }
-
-  .section-prev__content-element{
-    height: 187px;
+    .content-items{
+      span{
+        bottom: 123px;
+      }
+    }
+    .content__element{
+      figcaption{
+        position: static;
+      }
+    }
   }
 
   figcaption{
@@ -124,10 +129,28 @@ img{
       }
     }
   }
-  i{
-    order: -1;
-    align-self: center;
-    font-size: 18px;
+  .degrade:active {
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+    -webkit-animation: prog 2s forwards;
   }
-
+  @-webkit-keyframes prog {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes prog{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
