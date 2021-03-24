@@ -1,7 +1,7 @@
 /* VARIABLE*/
 /* GENERAL */
 body {
-  width: 1024PX;
+  width: 1024px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
 }
@@ -62,11 +62,11 @@ img {
     border: none;
     font-size: 17px;
     padding: 16px 0 16px 16px;
-    width: 228px;
+    width: 233px;
     background: #f2f2f2;
   }
   .section__infos-content i {
-    padding-left: 51px;
+    padding-left: 45px;
   }
 
   /* MAIN */
@@ -99,6 +99,7 @@ img {
   }
   .section-prev .content-items span {
     bottom: 123px;
+    left: 204px;
   }
   .section-prev .content__element figcaption {
     position: static;

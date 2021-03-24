@@ -1,3 +1,61 @@
+/* Hover */
+@media screen and (min-width: 1025px) {
+  /* COEUR */
+  .degrade:hover {
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+  }
+
+  /* TRANSITION MENU*/
+  .plats__transition1:hover .section__element-items {
+    display: block;
+  }
+
+  .plats__transition2:hover .section__element-items {
+    display: block;
+  }
+
+  .plats__transition3:hover .section__element-items {
+    display: block;
+  }
+
+  /* ANIMATION COCHE VERTE*/
+  .plats__transition1:hover .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition2:hover .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition3:hover .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+}
 .page {
   display: flex;
   justify-content: flex-start;
@@ -44,18 +102,10 @@ main h2 {
 }
 .titre .fa-heart {
   cursor: pointer;
-  margin-top: 10px;
   padding-left: 7px;
   padding-right: 7px;
   font-size: 25px;
   color: #000;
-}
-.titre .degrade:hover {
-  font-weight: bold;
-  background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: prog 2s forwards;
 }
 @keyframes prog {
   0% {
@@ -90,16 +140,10 @@ main h2 {
 }
 .plats .plats_text {
   width: 251px;
-}
-.plats div:hover h3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plats div:hover p {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  float: left;
 }
 .plats .plats__money {
+  height: 41px;
   font-weight: bold;
   display: flex;
   align-items: flex-end;
@@ -112,13 +156,37 @@ main h2 {
 .plats__transition1 {
   animation: slideDown 1.5s forwards;
 }
+.plats__transition1 .plats_text:hover h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plats__transition1 .plats_text:hover p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .plats__transition2 {
   animation: slideDown 2s forwards;
 }
+.plats__transition2 .plats_text:hover h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plats__transition2 .plats_text:hover p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .plats__transition3 {
   animation: slideDown 2.5s forwards;
+}
+.plats__transition3 .plats_text:hover h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plats__transition3 .plats_text:hover p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @keyframes slideDown {
@@ -133,33 +201,16 @@ main h2 {
 }
 .section__element-items {
   display: none;
-  margin: 0 0 0 5px;
+  margin: 0;
   width: 50px;
   height: 50px;
-  transition: transform 1s linear;
-}
-
-.plats__transition1:hover .section__element-items {
-  display: block;
-}
-
-.plats__transition2:hover .section__element-items {
-  display: block;
-  /*transform: rotate(180deg);*/
-}
-
-.plats__transition3:hover .section__element-items {
-  display: block;
-  /*transform: rotate(180deg);*/
-}
-
-.jauge-remplissage {
-  display: none;
   background: #99E2D0;
-  height: 50px;
   border-radius: 0 11px 11px 0;
   animation: droite 1.3s linear;
   animation-fill-mode: forwards;
+}
+.section__element-items .cache {
+  display: none;
 }
 
 @keyframes droite {
@@ -172,54 +223,6 @@ main h2 {
     transform: translateX(0);
   }
 }
-.plats__transition1:hover .jauge-remplissage {
-  width: 50px;
-  display: inline-block;
-}
-
-.plats__transition2:hover .jauge-remplissage {
-  width: 50px;
-  display: inline-block;
-}
-
-.plats__transition3:hover .jauge-remplissage {
-  width: 50px;
-  display: inline-block;
-}
-
-.plats__transition1:hover .cache {
-  color: #fff;
-  position: relative;
-  top: 15px;
-  left: 15px;
-  font-size: 17px;
-  width: 17px;
-  animation: rotate 1.3s linear;
-  animation-fill-mode: forwards;
-}
-
-.plats__transition2:hover .cache {
-  color: #fff;
-  position: relative;
-  top: 15px;
-  left: 15px;
-  font-size: 17px;
-  width: 17px;
-  animation: rotate 1.3s linear;
-  animation-fill-mode: forwards;
-}
-
-.plats__transition3:hover .cache {
-  color: #fff;
-  position: relative;
-  top: 15px;
-  left: 15px;
-  font-size: 17px;
-  width: 17px;
-  animation: rotate 1.3s linear;
-  animation-fill-mode: forwards;
-}
-
 @keyframes rotate {
   0% {
     transform: rotateZ(180deg);
@@ -243,10 +246,12 @@ main h2 {
   }
   .page i {
     margin: 0 40px 0 18px;
+    font-size: 22px;
   }
 
   main {
     margin: 0 15px;
+    display: inherit;
   }
   main h2 {
     margin-bottom: 4px;
@@ -271,7 +276,7 @@ main h2 {
     display: flex;
     justify-content: space-between;
   }
-  .titre .degrade:hover {
+  .titre .degrade:active {
     font-weight: bold;
     background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
@@ -283,13 +288,8 @@ main h2 {
     font-size: 14px;
     margin-bottom: 48px;
   }
-  .mets .cache {
-    display: none;
-  }
   .mets p {
     font-size: 13px;
-    display: flex;
-    justify-content: space-between;
     padding-left: 9px;
     font-weight: 300;
   }
@@ -309,12 +309,8 @@ main h2 {
     box-shadow: 8px 8px 10px #aaa;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    transition: all 2s ease-in;
   }
-  .plats span {
-    font-weight: bold;
+  .plats .plats__money {
     margin-right: 9px;
   }
   .plats h3 {
@@ -327,6 +323,51 @@ main h2 {
     width: 35px;
     height: 3px;
     margin-bottom: 12px;
+  }
+
+  .plats__transition1:active .section__element-items {
+    display: block;
+  }
+
+  .plats__transition2:active .section__element-items {
+    display: block;
+  }
+
+  .plats__transition3:active .section__element-items {
+    display: block;
+  }
+
+  .plats__transition1:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition2:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition3:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
   }
 }
 

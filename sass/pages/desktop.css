@@ -15,23 +15,6 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
-.section__infos div {
-  background: #f2f2f2;
-}
-.section__infos input {
-  border: none;
-  font-size: 17px;
-  padding: 16px;
-  width: 334px;
-  background: #f2f2f2;
-}
-.section__infos input:focus {
-  outline: none;
-}
-.section__infos i {
-  padding-left: 51px;
-}
-
 /* MAIN*/
 main {
   padding: 0 14px;
@@ -58,6 +41,23 @@ main {
 
   .section__infos div {
     margin: 0 264px;
+  }
+
+  .section__infos-content {
+    background: #f2f2f2;
+  }
+  .section__infos-content input {
+    border: none;
+    font-size: 17px;
+    padding: 16px;
+    width: 334px;
+    background: #f2f2f2;
+  }
+  .section__infos-content input:focus {
+    outline: none;
+  }
+  .section__infos-content i {
+    padding-left: 51px;
   }
 
   .degrade:hover {

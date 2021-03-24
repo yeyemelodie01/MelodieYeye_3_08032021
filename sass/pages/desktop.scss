@@ -23,66 +23,66 @@ img{
     font-family: 'Roboto', sans-serif;
   }
 }
-
-.section__infos{
-  div{
-    background: $lightgray;
-  }
-  input{
-    border: none;
-    font-size: 17px;
-    padding: 16px;
-    width: 334px;
-    background: $lightgray;
-  }
-  input:focus{
-    outline:none;
-  }
-  i{
-    padding-left: 51px;
-  }
-}
 /* MAIN*/
 main {
   padding: 0 14px;
 }
   /* FONCTIONNEMENT */
-  @media screen and (min-width: 1025px){
-    .section{
-      ol{
-        li:hover{
-          background: #9356DC4A;
-          transform: scale(1.2);
-          -webkit-transform: scale(1.2);
-          cursor: pointer;
-        }
-        li:hover i {
-          color: $primary;
-          opacity: 1;
-        }
+@media screen and (min-width: 1025px){
+  .section{
+    ol{
+      li:hover{
+        background: #9356DC4A;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        cursor: pointer;
       }
-    }
-    .section-prev{
-      .section-prev__content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+      li:hover i {
+        color: $primary;
+        opacity: 1;
       }
-    }
-    .section__infos {
-      div {
-        margin: 0 264px;
-      }
-    }
-    .degrade:hover {
-      font-weight: bold;
-      background: -webkit-linear-gradient(0deg, $primary, $secondary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: prog 2s forwards;
-      -webkit-animation: prog 2s forwards;
     }
   }
+
+  .section-prev{
+    .section-prev__content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  .section__infos {
+    div{
+      margin: 0 264px;
+    }
+  }
+  .section__infos-content{
+    background: $lightgray;
+    input{
+      border: none;
+      font-size: 17px;
+      padding: 16px;
+      width: 334px;
+      background: $lightgray;
+    }
+    input:focus{
+      outline:none;
+    }
+    i{
+      padding-left: 51px;
+    }
+  }
+
+  .degrade:hover {
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+    -webkit-animation: prog 2s forwards;
+  }
+}
 .section__title{
   font-weight: bold;
 }

@@ -1,6 +1,5 @@
 #loader{
   background: #fff;
-  width: 69%;
   height: 1401px;
   position: absolute;
   animation: disparition 3s linear;
@@ -94,8 +93,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 1024px){
   #loader {
-    width: 72%;
-    height: 100%;
+    width: 320px;
   }
   .loader__rotate{
     margin: 233px 329px;
@@ -104,7 +102,6 @@
 
 @media screen and (max-width: 480px) {
   #loader {
-    width: 75%;
     height: 100%;
   }
   .loader__rotate{
