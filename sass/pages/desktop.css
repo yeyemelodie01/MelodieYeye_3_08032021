@@ -43,6 +43,7 @@ main {
     background: #9356DC4A;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
+    cursor: pointer;
   }
   .section ol li:hover i {
     color: #9356DC;
@@ -155,7 +156,7 @@ main {
   font-family: "Roboto", sans-serif;
   position: relative;
   bottom: 142px;
-  left: 203px;
+  left: 245px;
 }
 
 .section-prev__title {
@@ -171,6 +172,10 @@ main {
 .section-prev__content-element figcaption {
   position: relative;
   bottom: 20px;
+}
+
+.content__element figcaption {
+  position: static;
 }
 
 figcaption {

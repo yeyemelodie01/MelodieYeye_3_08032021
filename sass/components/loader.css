@@ -25,8 +25,8 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 1.5s linear;
-  animation: spin 1.5s linear;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
   /* Placement du loader au mileu de la page */
   margin: 326px 442px;
   position: absolute;
@@ -47,8 +47,8 @@
   border-top-color: #FF79DA;
   border-radius: 50px;
   opacity: 0.6;
-  animation: spin 10s linear;
-  -webkit-animation: spin 10s linear;
+  animation: spin 10s linear infinite;
+  -webkit-animation: spin 10s linear infinite;
 }
 
 .loader__rotate:before {
@@ -62,8 +62,8 @@
   border-top-color: #99E2D0;
   border-radius: 50px;
   opacity: 0.6;
-  animation: spin 5s linear;
-  -webkit-animation: spin 5s linear;
+  animation: spin 5s linear infinite;
+  -webkit-animation: spin 5s linear infinite;
 }
 
 #content {
