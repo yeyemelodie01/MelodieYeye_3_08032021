@@ -329,6 +329,45 @@ main{
 
   }
 
+  .plats__transition1{
+    .plats_text:active h3{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 176px;
+    }
+    .plats_text:active p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 176px;
+    }
+  }
+
+  .plats__transition2{
+    .plats_text:active h3{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 176px;
+    }
+    .plats_text:active p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 176px;
+    }
+  }
+
+  .plats__transition3{
+    .plats_text:active h3{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 176px;
+    }
+    .plats_text:active p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 176px;
+    }
+  }
+
   .plats__transition1:active .section__element-items{
     display: block;
     background: #99E2D0;
