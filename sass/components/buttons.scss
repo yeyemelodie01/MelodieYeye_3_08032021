@@ -18,6 +18,9 @@ button{
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
   width: 146px;
+  position: relative;
+  left: 400px;
+  cursor: pointer;
 }
 
 button:focus{
@@ -36,6 +39,14 @@ button:focus{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
   }
+  .section__infos-btn{
+    width: 192px;
+    position: inherit;
+  }
+  .btn{
+    position: relative;
+    left: 294px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -45,7 +56,10 @@ button:focus{
     position: relative;
     left: 68px;
   }
-
+  .section__infos-btn{
+    width: 192px;
+    position: inherit;
+  }
   button:active{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);

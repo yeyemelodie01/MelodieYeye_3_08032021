@@ -4,7 +4,7 @@ $tertiary: #99E2D0;
 $shadow: #aaa;
 $white: #fff;
 $black:#000;
-
+/* DEBUT RESPONSIVE DESKTOP */
 /* Hover */
 @media screen and (min-width: 1025px) {
   /* COEUR */
@@ -78,11 +78,11 @@ $black:#000;
 
 /* PAGE */
 .page{
-  display: flex;
-  justify-content: flex-start;
+  margin-left: 39px;
   a{
     display: flex;
     align-items: center;
+    margin-right: 338px;
   }
   img{
     height: 47px;
@@ -237,21 +237,25 @@ main{
   0%{transform: rotateZ(180deg);}
   100%{ transform: rotateZ(0deg);}
 }
+/* FIN RESPONSIVE DESKTOP */
 
+/* DEBUT RESPONSIVE MOBILE */
 @media screen and (max-width: 480px){
   .page{
     display: flex;
     justify-content: flex-start;
+    margin: 0;
     a{
       display: flex;
       align-items: center;
+      margin: 0;
     }
     img{
       width: 140px;
       height: 47px;
     }
     i{
-      margin: 0 40px 0 18px;
+      margin: 0 40px 0 34px;
       font-size: 22px;
     }
   }
@@ -372,19 +376,19 @@ main{
     display: block;
     background: #99E2D0;
     width: 61px;
-    animation: coche 3s ease;
+    animation: coche 1.3s ease;
   }
   .plats__transition2:active .section__element-items{
     display: block;
     background: #99E2D0;
     width: 61px;
-    animation: coche 3s ease;
+    animation: coche 1.3s ease;
   }
   .plats__transition3:active .section__element-items{
     display: block;
     background: #99E2D0;
     width: 61px;
-    animation: coche 3s ease;
+    animation: coche 1.3s ease;
   }
   .plats__transition1:active .cache {
     color: #fff;
@@ -419,3 +423,39 @@ main{
     animation-fill-mode: forwards;
   }
 }
+/* FIN RESPONSIVE MOBILE*/
+
+/* DEBUT RESPONSIVE TABLETTE */
+@media screen and (min-width: 481px) and (max-width: 1024px){
+  /* GENERAL */
+  body{
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  /* PAGE */
+  .page{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    a{
+      margin-right: 50px;
+      margin-left: 55px;
+    }
+  }
+  .logo{
+  width: 500px;
+  }
+  /* TITRE */
+
+  /* MAIN */
+
+  /* SECTION METS */
+  .mets{
+    font-size: 12px;
+    margin: 0;
+    width: 231px;
+  }
+  /* PLATS */
+}
+/* FIN RESPONSIVE TABLETTE */

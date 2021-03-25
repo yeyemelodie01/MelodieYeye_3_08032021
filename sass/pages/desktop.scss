@@ -8,27 +8,29 @@ $black: #000;
 $shadow: #aaa;
 $white: #fff;
 $lightgray: #f2f2f2;
-
-img{
-  width: 300px;
-  height: 200px;
-}
-/* INFOS */
-.section__infos{
-  text-align: center;
-  margin: 0 15px;
-  .section__infos--bold{
-    font-weight: bold;
-    margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
-  }
-}
-/* MAIN*/
-main {
-  padding: 0 14px;
-}
-  /* FONCTIONNEMENT */
 @media screen and (min-width: 1025px){
+  .section__infos {
+    div{
+      margin: 0 264px;
+    }
+  }
+  .section__infos-content{
+    background: $lightgray;
+    input{
+      border: none;
+      font-size: 17px;
+      padding: 16px;
+      width: 334px;
+      background: $lightgray;
+    }
+    input:focus{
+      outline:none;
+    }
+    i{
+      padding-left: 51px;
+    }
+  }
+
   .section{
     ol{
       li:hover{
@@ -52,27 +54,7 @@ main {
     }
   }
 
-  .section__infos {
-    div{
-      margin: 0 264px;
-    }
-  }
-  .section__infos-content{
-    background: $lightgray;
-    input{
-      border: none;
-      font-size: 17px;
-      padding: 16px;
-      width: 334px;
-      background: $lightgray;
-    }
-    input:focus{
-      outline:none;
-    }
-    i{
-      padding-left: 51px;
-    }
-  }
+
 
   .degrade:hover {
     font-weight: bold;
@@ -83,6 +65,26 @@ main {
     -webkit-animation: prog 2s forwards;
   }
 }
+img{
+  width: 300px;
+  height: 200px;
+}
+/* INFOS */
+.section__infos{
+  text-align: center;
+  margin: 0 15px;
+  .section__infos--bold{
+    font-weight: bold;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+/* MAIN*/
+main {
+  padding: 0 14px;
+}
+  /* FONCTIONNEMENT */
+
 .section__title{
   font-weight: bold;
 }
@@ -105,6 +107,7 @@ main {
       transition-property: transform;
       transition-duration: 0.5s;
       transition-timing-function: ease-out;
+      cursor: pointer;
     }
   }
   li:before{
