@@ -122,11 +122,14 @@ $black:#000;
 main{
   margin: 0 15px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
   h2{
     margin-bottom: 4px;
     font-size: 14px;
+  }
+  .main__content{
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -209,7 +212,6 @@ main{
   height: 50px;
   background: #99E2D0;
   border-radius: 0 11px 11px 0;
-  animation: droite 1.3s linear;
   animation-fill-mode: forwards;
 }
 @keyframes droite{
@@ -223,10 +225,12 @@ main{
 @keyframes coche{
   0%{
     width: 0;
+    opacity: 0;
   }
 
   100%{
-    width: 50px;
+    width: 61px;
+    opacity: 1;
   }
 }
 @keyframes rotate{
@@ -259,7 +263,11 @@ main{
       margin-bottom: 4px;
       font-size: 14px;
     }
+    .main__content{
+      display: inherit;
+    }
   }
+
   /* TITRE ET IMAGE */
   .imgmenu{
     height: 200px;

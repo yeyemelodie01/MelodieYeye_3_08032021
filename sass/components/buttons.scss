@@ -17,6 +17,7 @@ button{
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
+  width: 146px;
 }
 
 button:focus{
@@ -41,7 +42,10 @@ button:focus{
   .btn{
     padding: 12px 33px;
     margin-top: 0;
+    position: relative;
+    left: 68px;
   }
+
   button:active{
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
