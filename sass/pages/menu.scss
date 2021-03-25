@@ -18,12 +18,18 @@ $black:#000;
   /* TRANSITION MENU*/
   .plats__transition1:hover .section__element-items{
     display: block;
+    width: 61px;
+    animation: coche 3s ease;
   }
   .plats__transition2:hover .section__element-items{
     display: block;
+    width: 61px;
+    animation: coche 3s ease;
   }
   .plats__transition3:hover .section__element-items{
     display: block;
+    width: 61px;
+    animation: coche 3s ease;
   }
 
   /* ANIMATION COCHE VERTE*/
@@ -60,6 +66,17 @@ $black:#000;
     animation-fill-mode: forwards;
   }
 }
+
+@keyframes prog{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* PAGE */
 .page{
   display: flex;
   justify-content: flex-start;
@@ -74,18 +91,7 @@ $black:#000;
     font-size: 28px;
   }
 }
-
-main{
-  margin: 0 15px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  h2{
-    margin-bottom: 4px;
-    font-size: 14px;
-  }
-}
-
+/* TITRE ET IMAGE */
 .imgmenu{
   height: 200px;
 }
@@ -110,15 +116,26 @@ main{
     font-size: 25px;
     color: $black;
   }
-  @keyframes prog {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+
+/* MAIN */
+main{
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  h2{
+    margin-bottom: 4px;
+    font-size: 14px;
   }
 }
+
+/* METS */
+.mets{
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+
 .barre{
   background: $tertiary;
   width: 35px;
@@ -126,10 +143,6 @@ main{
   margin-bottom: 12px;
 }
 
-.mets{
-  font-size: 14px;
-  margin-bottom: 48px;
-}
 .plats{
   height: 45px;
   border-radius: 11px;
@@ -142,6 +155,7 @@ main{
   .plats_text{
     width:251px;
     float: left;
+    cursor: pointer;
   }
 
   .plats__money{
@@ -161,35 +175,21 @@ main{
   .plats_text:hover h3{
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 176px;
   }
   .plats_text:hover p{
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 176px;
   }
 }
 
 .plats__transition2{
   animation: slideDown 2s forwards;
-  .plats_text:hover h3{
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .plats_text:hover p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }
 
 .plats__transition3{
   animation: slideDown 2.5s forwards;
-  .plats_text:hover h3{
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .plats_text:hover p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }
 
 @keyframes slideDown {
@@ -206,28 +206,29 @@ main{
 .section__element-items{
   display: none;
   margin: 0;
-  width: 50px;
   height: 50px;
   background: #99E2D0;
   border-radius: 0 11px 11px 0;
-  animation:droite 1.3s linear;
+  animation: droite 1.3s linear;
   animation-fill-mode: forwards;
-  .cache{
-    display: none;
-  }
 }
-
 @keyframes droite{
   0%{
     opacity: 0;
-    transform: translateX(44px);
   }
   100%{
     opacity: 1;
-    transform: translateX(0);
   }
 }
+@keyframes coche{
+  0%{
+    width: 0;
+  }
 
+  100%{
+    width: 50px;
+  }
+}
 @keyframes rotate{
   0%{transform: rotateZ(180deg);}
   100%{ transform: rotateZ(0deg);}
@@ -250,7 +251,7 @@ main{
       font-size: 22px;
     }
   }
-
+  /* MAIN */
   main{
     margin: 0 15px;
     display: inherit;
@@ -259,7 +260,7 @@ main{
       font-size: 14px;
     }
   }
-
+  /* TITRE ET IMAGE */
   .imgmenu{
     height: 200px;
   }
@@ -285,6 +286,7 @@ main{
       animation: prog 2s forwards;
     }
   }
+  /* METS */
   .mets{
     font-size: 14px;
     margin-bottom: 48px;
@@ -318,20 +320,24 @@ main{
     }
 
   }
-  .barre{
-    background: $tertiary;
-    width: 35px;
-    height: 3px;
-    margin-bottom: 12px;
-  }
+
   .plats__transition1:active .section__element-items{
     display: block;
+    background: #99E2D0;
+    width: 61px;
+    animation: coche 3s ease;
   }
   .plats__transition2:active .section__element-items{
     display: block;
+    background: #99E2D0;
+    width: 61px;
+    animation: coche 3s ease;
   }
   .plats__transition3:active .section__element-items{
     display: block;
+    background: #99E2D0;
+    width: 61px;
+    animation: coche 3s ease;
   }
   .plats__transition1:active .cache {
     color: #fff;
