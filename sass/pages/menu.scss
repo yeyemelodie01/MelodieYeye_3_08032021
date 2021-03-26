@@ -361,11 +361,13 @@ main{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 176px;
+      animation: over 1.3s ease;
     }
     .plats_text:active p{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 176px;
+      animation: over 1.3s ease;
     }
   }
 
@@ -374,11 +376,13 @@ main{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 176px;
+      animation: over 1.3s ease;
     }
     .plats_text:active p{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 176px;
+      animation: over 1.3s ease;
     }
   }
 
@@ -387,14 +391,23 @@ main{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 176px;
+      animation: over 1.3s ease;
     }
     .plats_text:active p{
       overflow: hidden;
       text-overflow: ellipsis;
       width: 176px;
+      animation: over 1.3s ease;
     }
   }
-
+  @keyframes over{
+    0%{
+      width: 249px;
+    }
+    100%{
+      width: 176px;
+    }
+  }
   .plats__transition1:active .section__element-items{
     display: block;
     background: #99E2D0;
