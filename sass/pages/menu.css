@@ -10,6 +10,49 @@
     animation: prog 2s forwards;
   }
 
+  /* TRANSITION TEXTE PLATS */
+  .plats__transition1 {
+    animation: slideDown 1.5s forwards;
+  }
+  .plats__transition1 .plats_text:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+  .plats__transition1 .plats_text:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+
+  .plats__transition2 {
+    animation: slideDown 2s forwards;
+  }
+  .plats__transition2 .plats_text:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+  .plats__transition2 .plats_text:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+
+  .plats__transition3 {
+    animation: slideDown 2.5s forwards;
+  }
+  .plats__transition3 .plats_text:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+  .plats__transition3 .plats_text:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+
   /* TRANSITION MENU*/
   .plats__transition1:hover .section__element-items {
     display: block;
@@ -167,28 +210,6 @@ main .main__content {
   padding-left: 8px;
 }
 
-.plats__transition1 {
-  animation: slideDown 1.5s forwards;
-}
-.plats__transition1 .plats_text:hover h3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 176px;
-}
-.plats__transition1 .plats_text:hover p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 176px;
-}
-
-.plats__transition2 {
-  animation: slideDown 2s forwards;
-}
-
-.plats__transition3 {
-  animation: slideDown 2.5s forwards;
-}
-
 @keyframes slideDown {
   0% {
     transform: translateY(100px);
@@ -330,6 +351,9 @@ main .main__content {
     padding-top: 4px;
     padding-left: 8px;
   }
+  .plats p {
+    padding-left: 8px;
+  }
 
   .plats__transition1 .plats_text:active h3 {
     overflow: hidden;
@@ -417,6 +441,75 @@ main .main__content {
     animation: rotate 1.3s linear;
     animation-fill-mode: forwards;
   }
+
+  /* VISITED */
+  /*.plats__transition1: .section__element-items{
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    animation: cochereverse 1.3s ease;
+
+  }
+  .plats__transition2:visited .section__element-items{
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    animation: cochereverse 1.3s ease;
+  }
+  .plats__transition3:visited .section__element-items{
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    animation: cochereverse 1.3s ease;
+  }
+  @keyframes cochereverse{
+    0%{
+      width: 50px;
+      opacity: 1;
+    }
+
+    100%{
+      width: 0;
+      opacity: 0;
+    }
+  }
+  .plats__transition1:visited .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation:rotatereverse 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition2:visited .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation:rotatereverse 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition3:visited .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation:rotatereverse 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes rotatereverse{
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(180deg);}
+  }*/
 }
 /* FIN RESPONSIVE MOBILE*/
 /* DEBUT RESPONSIVE TABLETTE */
