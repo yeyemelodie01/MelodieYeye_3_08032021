@@ -17,12 +17,13 @@
   .plats__transition1 .plats_text:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
   }
   .plats__transition1 .plats_text:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
+    animation: over 1.3s ease;
   }
 
   .plats__transition2 {
@@ -31,12 +32,14 @@
   .plats__transition2 .plats_text:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
+    animation: over 1.3s ease;
   }
   .plats__transition2 .plats_text:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
+    animation: over 1.3s ease;
   }
 
   .plats__transition3 {
@@ -45,14 +48,24 @@
   .plats__transition3 .plats_text:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
+    animation: over 1.3s ease;
   }
   .plats__transition3 .plats_text:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
+    animation: over 1.3s ease;
   }
 
+  @keyframes over {
+    0% {
+      width: 235px;
+    }
+    100% {
+      width: 190px;
+    }
+  }
   /* TRANSITION MENU*/
   .plats__transition1:hover .section__element-items {
     display: block;
@@ -185,6 +198,7 @@ main .main__content {
 }
 
 .plats {
+  width: 304px;
   height: 45px;
   border-radius: 11px;
   box-shadow: 8px 8px 10px #aaa;
@@ -200,6 +214,7 @@ main .main__content {
   cursor: pointer;
 }
 .plats .plats__money {
+  margin-right: 9px;
   height: 41px;
   font-weight: bold;
   display: flex;
@@ -207,6 +222,12 @@ main .main__content {
 }
 .plats h3 {
   padding-top: 4px;
+  padding-left: 8px;
+}
+.plats p {
+  width: 235px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding-left: 8px;
 }
 
@@ -229,14 +250,6 @@ main .main__content {
   animation-fill-mode: forwards;
 }
 
-@keyframes droite {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes coche {
   0% {
     width: 0;
@@ -247,7 +260,25 @@ main .main__content {
     opacity: 1;
   }
 }
+@-webkit-keyframes coche {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 50px;
+    opacity: 1;
+  }
+}
 @keyframes rotate {
+  0% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@-webkit-keyframes rotate {
   0% {
     transform: rotateZ(180deg);
   }
@@ -338,6 +369,7 @@ main .main__content {
   }
 
   .plats {
+    width: 290px;
     height: 45px;
     border-radius: 11px;
     box-shadow: 8px 8px 10px #aaa;
@@ -353,6 +385,7 @@ main .main__content {
   }
   .plats p {
     padding-left: 8px;
+    width: 242px;
   }
 
   .plats__transition1 .plats_text:active h3 {
@@ -402,11 +435,23 @@ main .main__content {
       width: 176px;
     }
   }
+  @-webkit-keyframes over {
+    0% {
+      width: 249px;
+    }
+    100% {
+      width: 176px;
+    }
+  }
   .plats__transition1:active .section__element-items {
     display: block;
     background: #99E2D0;
     width: 50px;
-    animation: coche 1.3s ease;
+    animation: coche 1.3s ease forwards;
+  }
+  .plats__transition1:active .section__element-items .jauge-remplissage {
+    animation: cochereverse 1.3s ease;
+    animation-delay: 2s;
   }
 
   .plats__transition2:active .section__element-items {
@@ -456,6 +501,26 @@ main .main__content {
     animation-fill-mode: forwards;
   }
 
+  @keyframes cochereverse {
+    0% {
+      width: 50px;
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes cochereverse {
+    0% {
+      width: 50px;
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
   /* VISITED */
   /*.plats__transition1: .section__element-items{
     display: block;
@@ -476,17 +541,7 @@ main .main__content {
     width: 50px;
     animation: cochereverse 1.3s ease;
   }
-  @keyframes cochereverse{
-    0%{
-      width: 50px;
-      opacity: 1;
-    }
 
-    100%{
-      width: 0;
-      opacity: 0;
-    }
-  }
   .plats__transition1:visited .cache {
     color: #fff;
     position: relative;
