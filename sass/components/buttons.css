@@ -12,9 +12,6 @@ button {
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
-  width: 146px;
-  position: relative;
-  left: 400px;
   cursor: pointer;
 }
 
@@ -36,7 +33,6 @@ button:focus {
 
   .section__infos-btn {
     width: 192px;
-    position: inherit;
   }
 
   .btn {
@@ -54,7 +50,6 @@ button:focus {
 
   .section__infos-btn {
     width: 192px;
-    position: inherit;
   }
 
   button:active {
