@@ -18,11 +18,6 @@ $black:#000;
   /* TRANSITION TEXTE PLATS */
   .plats__transition1{
     animation: slideDown 1.5s forwards;
-    .plats_text:hover h3{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 190px;
-    }
     .plats_text:hover p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -33,12 +28,6 @@ $black:#000;
 
   .plats__transition2{
     animation: slideDown 2s forwards;
-    .plats_text:hover h3{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 190px;
-      animation: over 1.3s ease;
-    }
     .plats_text:hover p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -49,12 +38,6 @@ $black:#000;
 
   .plats__transition3{
     animation: slideDown 2.5s forwards;
-    .plats_text:hover h3{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 190px;
-      animation: over 1.3s ease;
-    }
     .plats_text:hover p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -389,12 +372,6 @@ main{
   }
 
   .plats__transition1{
-    .plats_text:active h3{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 176px;
-      animation: over 1.3s ease;
-    }
     .plats_text:active p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -404,12 +381,6 @@ main{
   }
 
   .plats__transition2{
-    .plats_text:active h3{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 176px;
-      animation: over 1.3s ease;
-    }
     .plats_text:active p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -419,12 +390,6 @@ main{
   }
 
   .plats__transition3{
-    .plats_text:active h3{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 176px;
-      animation: over 1.3s ease;
-    }
     .plats_text:active p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -621,5 +586,11 @@ main{
     width: 231px;
   }
   /* PLATS */
+  .plats{
+    width: 228px;
+    .plats_text{
+      width: 200px;
+    }
+  }
 }
 /* FIN RESPONSIVE TABLETTE */

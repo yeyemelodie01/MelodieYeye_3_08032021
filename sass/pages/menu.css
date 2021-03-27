@@ -14,11 +14,6 @@
   .plats__transition1 {
     animation: slideDown 1.5s forwards;
   }
-  .plats__transition1 .plats_text:hover h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-  }
   .plats__transition1 .plats_text:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -29,12 +24,6 @@
   .plats__transition2 {
     animation: slideDown 2s forwards;
   }
-  .plats__transition2 .plats_text:hover h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-    animation: over 1.3s ease;
-  }
   .plats__transition2 .plats_text:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -44,12 +33,6 @@
 
   .plats__transition3 {
     animation: slideDown 2.5s forwards;
-  }
-  .plats__transition3 .plats_text:hover h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-    animation: over 1.3s ease;
   }
   .plats__transition3 .plats_text:hover p {
     overflow: hidden;
@@ -388,12 +371,6 @@ main .main__content {
     width: 242px;
   }
 
-  .plats__transition1 .plats_text:active h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 176px;
-    animation: over 1.3s ease;
-  }
   .plats__transition1 .plats_text:active p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -401,12 +378,6 @@ main .main__content {
     animation: over 1.3s ease;
   }
 
-  .plats__transition2 .plats_text:active h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 176px;
-    animation: over 1.3s ease;
-  }
   .plats__transition2 .plats_text:active p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -414,12 +385,6 @@ main .main__content {
     animation: over 1.3s ease;
   }
 
-  .plats__transition3 .plats_text:active h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 176px;
-    animation: over 1.3s ease;
-  }
   .plats__transition3 .plats_text:active p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -614,6 +579,12 @@ main .main__content {
   }
 
   /* PLATS */
+  .plats {
+    width: 228px;
+  }
+  .plats .plats_text {
+    width: 200px;
+  }
 }
 /* FIN RESPONSIVE TABLETTE */
 
