@@ -591,6 +591,18 @@ main{
     .plats_text{
       width: 200px;
     }
+    h3{
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+    p{
+      width: 170px;
+      font-size: 11px;
+    }
+    .plats__money{
+      position: relative;
+      bottom: 6px;
+    }
   }
 }
 /* FIN RESPONSIVE TABLETTE */
