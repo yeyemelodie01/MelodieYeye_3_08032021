@@ -1,0 +1,170 @@
+/* VARIABLE*/
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$ligthgray: #f2f2f2;
+$black: #000;
+$shadow: #aaa;
+/* GENERAL */
+body{
+  width: 1024px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+h1{
+  font-family: 'Shrikhand', cursive;
+}
+
+h2{
+  font-weight: 100;
+}
+
+h3,p{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+/* DEBUT RESPONSIVE MOBILE */
+@media screen and (max-width: 480px){
+  /* GENERAL */
+  body{
+    width: 320px;
+  }
+  /* INFOS */
+  .section__infos{
+    text-align: center;
+    margin: 0 15px;
+    .section__infos--bold{
+      margin-top: 40px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
+    div{
+      margin: 0;
+    }
+  }
+  .section__infos-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: static;
+    background: $ligthgray;
+    input{
+      border: none;
+      font-size: 17px;
+      padding: 16px 0 16px 16px;
+      width: 233px;
+      background: $ligthgray;
+    }
+    input:focus{
+      outline:none;
+    }
+    i{
+      padding-left: 45px;
+    }
+  }
+  /* MAIN */
+  .main{
+  }
+  /* FONTIONNEMENT */
+  .section{
+    width: 292px;
+    .section__title{
+      font-size: 20px;
+    }
+    .section__list-link:active {
+      background: #9356DC4A;
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+
+      i {
+        color: $primary;
+        opacity: 1;
+      }
+    }
+
+    .section__list-block {
+      display: block;
+    }
+  }
+
+  /* RESTAURANTS */
+  .section-prev{
+    .section-prev__title{
+      font-size: 20px;
+      margin-bottom: 21px;
+    }
+    .section-prev__content-element{
+      width: 290px;
+      height: 187px;
+      img{
+        width: 290px;
+        height: 130px;
+        border-radius: 12px 12px 0 0;
+      }
+    }
+    .content-items{
+      span{
+        bottom: 123px;
+        left: 204px;
+      }
+    }
+    .content__element{
+      figcaption{
+        position: static;
+      }
+    }
+  }
+
+  figcaption{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 0 0 12px 12px;
+    padding: 7px 14px;
+    div {
+      h3{
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .degrade:active {
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+    -webkit-animation: prog 2s forwards;
+  }
+  @-webkit-keyframes prog {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes prog{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+/* FIN RESPONSIVE MOBILE */

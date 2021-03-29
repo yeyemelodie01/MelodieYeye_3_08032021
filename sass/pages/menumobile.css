@@ -1,3 +1,212 @@
+/* DEBUT RESPONSIVE MOBILE */
+@media screen and (max-width: 480px) {
+  .page {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .page a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .page img {
+    width: 140px;
+    height: 47px;
+  }
+  .page i {
+    margin: 0 40px 0 34px;
+    font-size: 22px;
+  }
 
+  /* MAIN */
+  main {
+    margin: 0 15px;
+    padding: 0;
+    display: inherit;
+  }
+  main h2 {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+  main .main__content {
+    display: inherit;
+  }
+
+  /* TITRE ET IMAGE */
+  .imgmenu {
+    height: 200px;
+  }
+
+  .titre {
+    height: 244px;
+  }
+  .titre h1 {
+    font-size: 22px;
+    margin: 0;
+    position: relative;
+    bottom: 35px;
+    background: #fff;
+    border-radius: 34px 34px 0 0;
+    padding: 26px 12px 12px 18px;
+  }
+  .titre .degrade:active {
+    font-weight: bold;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: prog 2s forwards;
+  }
+  .titre .fa-heart {
+    margin-left: 46px;
+  }
+
+  /* METS */
+  .mets {
+    font-size: 13px;
+    margin-bottom: 48px;
+  }
+  .mets p {
+    font-size: 13px;
+    padding-left: 9px;
+    font-weight: 300;
+  }
+  .mets p:active .cache {
+    background: #99E2D0;
+    display: block;
+    padding: 18px 13px 20px 13px;
+    position: relative;
+    bottom: 24px;
+    border-radius: 0 9px 9px 0;
+    color: #fff;
+  }
+
+  .plats {
+    width: 290px;
+    height: 45px;
+    border-radius: 11px;
+    box-shadow: 8px 8px 10px #aaa;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  .plats .plats__money {
+    margin-right: 9px;
+    transition: margin-right 3s;
+  }
+  .plats .plats_text {
+    width: 195px;
+  }
+  .plats h3 {
+    padding-top: 4px;
+    padding-left: 8px;
+  }
+  .plats p {
+    padding-left: 8px;
+    width: 242px;
+    transition: width 3s;
+  }
+
+  .plats__transition1 {
+    animation: slideDown 1.5s forwards;
+  }
+  .plats__transition1 .plats_text:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+
+  .plats__transition2 {
+    animation: slideDown 2s forwards;
+  }
+  .plats__transition2 .plats_text:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+
+  .plats__transition3 {
+    animation: slideDown 2.5s forwards;
+  }
+  .plats__transition3 .plats_text:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 176px;
+  }
+
+  @keyframes over {
+    0% {
+      width: 249px;
+    }
+    100% {
+      width: 176px;
+    }
+  }
+  .plats__transition1:active .plats__money {
+    margin-right: 49px;
+  }
+
+  .plats__transition2:active .plats__money {
+    margin-right: 49px;
+  }
+
+  .plats__transition3:active .plats__money {
+    margin-right: 49px;
+  }
+
+  .plats__transition1:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .plats__transition2:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .plats__transition3:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .plats__transition1:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition2:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition3:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 3s linear;
+    animation-fill-mode: forwards;
+  }
+}
+/* FIN RESPONSIVE MOBILE*/
 
 /*# sourceMappingURL=menumobile.css.map */

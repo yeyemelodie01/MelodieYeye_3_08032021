@@ -16,7 +16,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
-    animation: over 1.3s ease;
   }
 
   .plats__transition2 {
@@ -26,7 +25,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
-    animation: over 1.3s ease;
   }
 
   .plats__transition3 {
@@ -36,24 +34,26 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
-    animation: over 1.3s ease;
   }
 
-  @keyframes over {
-    0% {
-      width: 235px;
-    }
-    100% {
-      width: 190px;
-    }
-  }
   /* TRANSITION MENU*/
+  .plats__transition1:hover .plats__money {
+    margin-right: 64px;
+  }
+
+  .plats__transition2:hover .plats__money {
+    margin-right: 64px;
+  }
+
+  .plats__transition3:hover.plats__money {
+    margin-right: 64px;
+  }
+
   .plats__transition1:hover .section__element-items {
     display: block;
     background: #99E2D0;
     width: 50px;
     height: 50px;
-    animation: coche 3s ease;
   }
 
   .plats__transition2:hover .section__element-items {
@@ -61,7 +61,6 @@
     background: #99E2D0;
     width: 50px;
     height: 50px;
-    animation: coche 3s ease;
   }
 
   .plats__transition3:hover .section__element-items {
@@ -69,7 +68,6 @@
     background: #99E2D0;
     width: 50px;
     height: 50px;
-    animation: coche 3s ease;
   }
 
   /* ANIMATION COCHE VERTE*/
@@ -145,8 +143,6 @@
   background: white;
   border-radius: 34px 34px 0 0;
   padding: 26px 12px 12px 18px;
-  display: flex;
-  justify-content: space-between;
 }
 .titre .fa-heart {
   cursor: pointer;
@@ -154,6 +150,7 @@
   padding-right: 7px;
   font-size: 25px;
   color: #000;
+  margin-left: 478px;
 }
 
 /* MAIN */
@@ -194,6 +191,7 @@ main .main__content {
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
+  overflow: hidden;
 }
 .plats .plats_text {
   width: 251px;
@@ -216,6 +214,7 @@ main .main__content {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 8px;
+  transition: width 3s;
 }
 
 @keyframes slideDown {
@@ -229,24 +228,24 @@ main .main__content {
   }
 }
 .section__element-items {
-  display: none;
-  margin: 0;
+  margin-left: -60px;
+  background: #99E2D0;
   width: 0;
-  height: 0;
+  height: 50px;
   border-radius: 0 11px 11px 0;
-  transition: width 1.3s;
+  transition: width 3s;
 }
 
-@keyframes coche {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    width: 50px;
-    opacity: 1;
-  }
+.cache {
+  color: transparent;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  font-size: 17px;
+  width: 17px;
+  transition: color 2s;
 }
+
 @keyframes rotate {
   0% {
     transform: rotateZ(180deg);

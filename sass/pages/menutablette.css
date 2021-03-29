@@ -1,3 +1,200 @@
+/* DEBUT RESPONSIVE TABLETTE */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /* GENERAL */
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
 
+  /* PAGE */
+  .page {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .page a {
+    margin-right: 50px;
+    margin-left: 55px;
+  }
+
+  .logo {
+    width: 500px;
+  }
+
+  /* TITRE */
+  .titre .degrade:active {
+    font-weight: bold;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: prog 2s forwards;
+  }
+
+  /* MAIN */
+  main {
+    padding: 0;
+  }
+
+  /* SECTION METS */
+  .mets {
+    font-size: 12px;
+    width: 231px;
+    margin: 0 28px 0 0;
+  }
+
+  .mets-marge {
+    margin: 0;
+  }
+
+  /* PLATS */
+  .plats {
+    width: 228px;
+    height: 38px;
+  }
+  .plats .plats_text {
+    width: 199px;
+  }
+  .plats h3 {
+    font-size: 12px;
+    margin-bottom: 2px;
+    transition: width 3s linear;
+  }
+  .plats p {
+    width: 158px;
+    font-size: 11px;
+    transition: width 3s linear;
+  }
+  .plats .plats__money {
+    position: relative;
+    bottom: 7px;
+    transition: margin-right 3s;
+  }
+
+  .plats__transition1 {
+    animation: slideDown 1.5s forwards;
+  }
+
+  .plats__transition2 {
+    animation: slideDown 2s forwards;
+  }
+
+  .plats__transition3 {
+    animation: slideDown 2.5s forwards;
+  }
+
+  .plats__transition1:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+  }
+
+  .plats__transition1:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+  }
+
+  .plats__transition2:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+  }
+
+  .plats__transition2:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+  }
+
+  .plats__transition3:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+  }
+
+  .plats__transition3:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+  }
+
+  .section__element-items {
+    height: 43px;
+    margin-left: 0;
+  }
+
+  .plats__transition1:active .plats__money {
+    margin-right: 7px;
+  }
+
+  .plats__transition2:active .plats__money {
+    margin-right: 7px;
+  }
+
+  .plats__transition3:active .plats__money {
+    margin-right: 7px;
+  }
+
+  .plats__transition1:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 43px;
+  }
+
+  .plats__transition2:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 43px;
+  }
+
+  .plats__transition3:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 43px;
+  }
+
+  .cache {
+    position: relative;
+    top: 13px;
+    left: 14px;
+  }
+
+  .plats__transition1:active .cache {
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 13px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition2:active .cache {
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 13px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition3:active .cache {
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 13px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+}
+/* FIN RESPONSIVE TABLETTE */
 
 /*# sourceMappingURL=menutablette.css.map */
