@@ -1,275 +1,5 @@
 /* DEBUT RESPONSIVE DESKTOP */
 /* Hover */
-@media screen and (min-width: 1025px) {
-  /* COEUR */
-  .degrade:hover {
-    font-weight: bold;
-    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: prog 2s forwards;
-  }
-
-  /* TRANSITION TEXTE PLATS */
-  .plats__transition1 {
-    animation: slideDown 1.5s forwards;
-  }
-  .plats__transition1 .plats_text:hover p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-    animation: over 1.3s ease;
-  }
-
-  .plats__transition2 {
-    animation: slideDown 2s forwards;
-  }
-  .plats__transition2 .plats_text:hover p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-    animation: over 1.3s ease;
-  }
-
-  .plats__transition3 {
-    animation: slideDown 2.5s forwards;
-  }
-  .plats__transition3 .plats_text:hover p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-    animation: over 1.3s ease;
-  }
-
-  @keyframes over {
-    0% {
-      width: 235px;
-    }
-    100% {
-      width: 190px;
-    }
-  }
-  /* TRANSITION MENU*/
-  .plats__transition1:hover .section__element-items {
-    display: block;
-    width: 50px;
-    animation: coche 3s ease;
-  }
-
-  .plats__transition2:hover .section__element-items {
-    display: block;
-    width: 50px;
-    animation: coche 3s ease;
-  }
-
-  .plats__transition3:hover .section__element-items {
-    display: block;
-    width: 50px;
-    animation: coche 3s ease;
-  }
-
-  /* ANIMATION COCHE VERTE*/
-  .plats__transition1:hover .cache {
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 17px;
-    width: 17px;
-    animation: rotate 1.3s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .plats__transition2:hover .cache {
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 17px;
-    width: 17px;
-    animation: rotate 1.3s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .plats__transition3:hover .cache {
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 17px;
-    width: 17px;
-    animation: rotate 1.3s linear;
-    animation-fill-mode: forwards;
-  }
-}
-@keyframes prog {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* PAGE */
-.page {
-  margin-left: 39px;
-}
-.page a {
-  display: flex;
-  align-items: center;
-}
-.page img {
-  height: 47px;
-}
-.page i {
-  font-size: 28px;
-}
-
-/* TITRE ET IMAGE */
-.imgmenu {
-  height: 200px;
-}
-
-.titre {
-  height: 244px;
-}
-.titre h1 {
-  font-size: 22px;
-  margin: 0;
-  position: relative;
-  bottom: 35px;
-  background: white;
-  border-radius: 34px 34px 0 0;
-  padding: 26px 12px 12px 18px;
-  display: flex;
-  justify-content: space-between;
-}
-.titre .fa-heart {
-  cursor: pointer;
-  padding-left: 7px;
-  padding-right: 7px;
-  font-size: 25px;
-  color: #000;
-}
-
-/* MAIN */
-main {
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-}
-main h2 {
-  margin-bottom: 4px;
-  font-size: 14px;
-}
-main .main__content {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* METS */
-.mets {
-  font-size: 14px;
-  margin-bottom: 48px;
-}
-
-.barre {
-  background: #99E2D0;
-  width: 35px;
-  height: 3px;
-  margin-bottom: 12px;
-}
-
-.plats {
-  width: 304px;
-  height: 45px;
-  border-radius: 11px;
-  box-shadow: 8px 8px 10px #aaa;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-.plats .plats_text {
-  width: 251px;
-  float: left;
-  cursor: pointer;
-}
-.plats .plats__money {
-  margin-right: 9px;
-  height: 41px;
-  font-weight: bold;
-  display: flex;
-  align-items: flex-end;
-}
-.plats h3 {
-  padding-top: 4px;
-  padding-left: 8px;
-}
-.plats p {
-  width: 235px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 8px;
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.section__element-items {
-  display: none;
-  margin: 0;
-  height: 50px;
-  background: #99E2D0;
-  border-radius: 0 11px 11px 0;
-  animation-fill-mode: forwards;
-}
-
-@keyframes coche {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    width: 50px;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes coche {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    width: 50px;
-    opacity: 1;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotateZ(180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotateZ(180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-/* FIN RESPONSIVE DESKTOP */
 /* DEBUT RESPONSIVE MOBILE */
 @media screen and (max-width: 480px) {
   .page {
@@ -325,9 +55,9 @@ main .main__content {
   }
   .titre .degrade:active {
     font-weight: bold;
-    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     animation: prog 2s forwards;
   }
 
@@ -371,6 +101,9 @@ main .main__content {
     width: 242px;
   }
 
+  .plats__transition1 {
+    animation: slideDown 1.5s forwards;
+  }
   .plats__transition1 .plats_text:active p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -378,6 +111,9 @@ main .main__content {
     animation: over 1.3s ease;
   }
 
+  .plats__transition2 {
+    animation: slideDown 2s forwards;
+  }
   .plats__transition2 .plats_text:active p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -385,6 +121,9 @@ main .main__content {
     animation: over 1.3s ease;
   }
 
+  .plats__transition3 {
+    animation: slideDown 2.5s forwards;
+  }
   .plats__transition3 .plats_text:active p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -400,23 +139,174 @@ main .main__content {
       width: 176px;
     }
   }
-  @-webkit-keyframes over {
-    0% {
-      width: 249px;
-    }
-    100% {
-      width: 176px;
-    }
-  }
   .plats__transition1:active .section__element-items {
     display: block;
     background: #99E2D0;
     width: 50px;
-    animation: coche 1.3s ease forwards;
+    height: 50px;
   }
-  .plats__transition1:active .section__element-items .jauge-remplissage {
-    animation: cochereverse 1.3s ease;
-    animation-delay: 2s;
+
+  .plats__transition2:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .plats__transition3:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .plats__transition1:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition2:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition3:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 1.3s linear;
+    animation-fill-mode: forwards;
+  }
+}
+/* FIN RESPONSIVE MOBILE*/
+/* DEBUT RESPONSIVE TABLETTE */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /* GENERAL */
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  /* PAGE */
+  .page {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .page a {
+    margin-right: 50px;
+    margin-left: 55px;
+  }
+
+  .logo {
+    width: 500px;
+  }
+
+  /* TITRE */
+  .titre .degrade:active {
+    font-weight: bold;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: prog 2s forwards;
+  }
+
+  /* MAIN */
+  /* SECTION METS */
+  .mets {
+    font-size: 12px;
+    margin: 0;
+    width: 231px;
+  }
+
+  /* PLATS */
+  .plats {
+    width: 228px;
+  }
+  .plats .plats_text {
+    width: 200px;
+  }
+  .plats h3 {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .plats p {
+    width: 170px;
+    font-size: 11px;
+  }
+  .plats .plats__money {
+    position: relative;
+    bottom: 6px;
+  }
+
+  .plats__transition1 {
+    animation: slideDown 1.5s forwards;
+  }
+  .plats__transition1 .plats_text:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    animation: over 1.3s ease;
+  }
+  .plats__transition1 .plats_text:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    animation: over 1.3s ease;
+  }
+
+  .plats__transition2 {
+    animation: slideDown 2s forwards;
+  }
+  .plats__transition2 .plats_text:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    animation: over 1.3s ease;
+  }
+  .plats__transition2 .plats_text:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    animation: over 1.3s ease;
+  }
+
+  .plats__transition3 {
+    animation: slideDown 2.5s forwards;
+  }
+  .plats__transition3 .plats_text:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    animation: over 1.3s ease;
+  }
+  .plats__transition3 .plats_text:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    animation: over 1.3s ease;
+  }
+
+  .plats__transition1:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    animation: coche 1.3s ease;
   }
 
   .plats__transition2:active .section__element-items {
@@ -466,136 +356,13 @@ main .main__content {
     animation-fill-mode: forwards;
   }
 
-  @keyframes cochereverse {
+  @keyframes over {
     0% {
-      width: 50px;
-      opacity: 1;
+      width: 170px;
     }
     100% {
-      width: 0;
-      opacity: 0;
+      width: 141px;
     }
-  }
-  @-webkit-keyframes cochereverse {
-    0% {
-      width: 50px;
-      opacity: 1;
-    }
-    100% {
-      width: 0;
-      opacity: 0;
-    }
-  }
-  /* VISITED */
-  /*.plats__transition1: .section__element-items{
-    display: block;
-    background: #99E2D0;
-    width: 50px;
-    animation: cochereverse 1.3s ease;
-
-  }
-  .plats__transition2:visited .section__element-items{
-    display: block;
-    background: #99E2D0;
-    width: 50px;
-    animation: cochereverse 1.3s ease;
-  }
-  .plats__transition3:visited .section__element-items{
-    display: block;
-    background: #99E2D0;
-    width: 50px;
-    animation: cochereverse 1.3s ease;
-  }
-
-  .plats__transition1:visited .cache {
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 17px;
-    width: 17px;
-    animation:rotatereverse 1.3s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .plats__transition2:visited .cache {
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 17px;
-    width: 17px;
-    animation:rotatereverse 1.3s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .plats__transition3:visited .cache {
-    color: #fff;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    font-size: 17px;
-    width: 17px;
-    animation:rotatereverse 1.3s linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes rotatereverse{
-    0%{transform: rotateZ(0deg);}
-    100%{transform: rotateZ(180deg);}
-  }*/
-}
-/* FIN RESPONSIVE MOBILE*/
-/* DEBUT RESPONSIVE TABLETTE */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  /* GENERAL */
-  body {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  /* PAGE */
-  .page {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
-  }
-  .page a {
-    margin-right: 50px;
-    margin-left: 55px;
-  }
-
-  .logo {
-    width: 500px;
-  }
-
-  /* TITRE */
-  /* MAIN */
-  /* SECTION METS */
-  .mets {
-    font-size: 12px;
-    margin: 0;
-    width: 231px;
-  }
-
-  /* PLATS */
-  .plats {
-    width: 228px;
-  }
-  .plats .plats_text {
-    width: 200px;
-  }
-  .plats h3 {
-    font-size: 13px;
-    margin-bottom: 2px;
-  }
-  .plats p {
-    width: 170px;
-    font-size: 11px;
-  }
-  .plats .plats__money {
-    position: relative;
-    bottom: 6px;
   }
 }
 /* FIN RESPONSIVE TABLETTE */
