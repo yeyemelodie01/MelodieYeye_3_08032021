@@ -12,31 +12,68 @@
   .plats__transition1 {
     animation: slideDown 1.5s forwards;
   }
-  .plats__transition1 .plats_text:hover p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
-  }
 
   .plats__transition2 {
     animation: slideDown 2s forwards;
-  }
-  .plats__transition2 .plats_text:hover p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 190px;
   }
 
   .plats__transition3 {
     animation: slideDown 2.5s forwards;
   }
-  .plats__transition3 .plats_text:hover p {
+
+  .plats__transition4 {
+    animation: slideDown 3s forwards;
+  }
+
+  /* TRANSITION MENU*/
+  .plats__transition1:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  /* TRANSITION MENU*/
+  .plats__transition1:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition2:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition2:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition3:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition3:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition4:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition4:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
   .plats__transition1:hover .plats__money {
     margin-right: 64px;
   }
@@ -45,7 +82,11 @@
     margin-right: 64px;
   }
 
-  .plats__transition3:hover.plats__money {
+  .plats__transition3:hover .plats__money {
+    margin-right: 64px;
+  }
+
+  .plats__transition4:hover .plats__money {
     margin-right: 64px;
   }
 
@@ -70,6 +111,13 @@
     height: 50px;
   }
 
+  .plats__transition4:hover .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 50px;
+  }
+
   /* ANIMATION COCHE VERTE*/
   .plats__transition1:hover .cache {
     color: #fff;
@@ -78,7 +126,7 @@
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 1.3s linear;
+    animation: rotate 2s linear;
     animation-fill-mode: forwards;
   }
 
@@ -89,7 +137,7 @@
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 1.3s linear;
+    animation: rotate 2s linear;
     animation-fill-mode: forwards;
   }
 
@@ -100,7 +148,18 @@
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 1.3s linear;
+    animation: rotate 2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition4:hover .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 2s linear;
     animation-fill-mode: forwards;
   }
 }
@@ -122,6 +181,7 @@
 }
 .page img {
   height: 47px;
+  margin: 14px 0;
 }
 .page i {
   font-size: 28px;
@@ -129,11 +189,12 @@
 
 /* TITRE ET IMAGE */
 .imgmenu {
-  height: 200px;
+  height: 310px;
 }
 
 .titre {
   height: 244px;
+  margin-bottom: 132px;
 }
 .titre h1 {
   font-size: 22px;
@@ -150,7 +211,7 @@
   padding-right: 7px;
   font-size: 25px;
   color: #000;
-  margin-left: 478px;
+  margin-left: 732px;
 }
 
 /* MAIN */
@@ -194,7 +255,7 @@ main .main__content {
   overflow: hidden;
 }
 .plats .plats_text {
-  width: 251px;
+  width: 216px;
   float: left;
   cursor: pointer;
 }
@@ -204,17 +265,21 @@ main .main__content {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
+  position: relative;
+  bottom: 2px;
+  transition: margin-right 2s;
 }
 .plats h3 {
   padding-top: 4px;
   padding-left: 8px;
+  transition: width 2s;
 }
 .plats p {
-  width: 235px;
+  width: 259px;
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 8px;
-  transition: width 3s;
+  transition: width 2s;
 }
 
 @keyframes slideDown {
@@ -233,7 +298,7 @@ main .main__content {
   width: 0;
   height: 50px;
   border-radius: 0 11px 11px 0;
-  transition: width 3s;
+  transition: width 2s;
 }
 
 .cache {

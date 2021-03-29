@@ -46,6 +46,7 @@ $black:#000;
 
   .titre{
     height: 244px;
+    margin-bottom: 21px;
     h1{
       font-size: 22px;
       margin: 0;
@@ -62,8 +63,17 @@ $black:#000;
       color: transparent;
       animation: prog 2s forwards;
     }
-    .fa-heart{
+    .fa-heart__posi1{
       margin-left: 46px;
+    }
+    .fa-heart__posi2{
+      margin-left: 41px;
+    }
+    .fa-heart__posi3{
+      margin-left: 88px;
+    }
+    .fa-heart__posi4{
+      margin-left: 53px;
     }
   }
   /* METS */
@@ -136,14 +146,16 @@ $black:#000;
       width: 176px;
     }
   }
-  @keyframes over{
-    0%{
-      width: 249px;
-    }
-    100%{
+
+  .plats__transition4{
+    animation: slideDown 3s forwards;
+    .plats_text:active p{
+      overflow: hidden;
+      text-overflow: ellipsis;
       width: 176px;
     }
   }
+
   .plats__transition1:active .plats__money{
     margin-right: 49px;
   }
@@ -153,24 +165,38 @@ $black:#000;
   .plats__transition3:active .plats__money{
     margin-right: 49px;
   }
+  .plats__transition4:active .plats__money{
+    margin-right: 49px;
+  }
+
   .plats__transition1:active .section__element-items{
     display: block;
     background: $tertiary;
     width: 50px;
     height: 50px;
   }
+
   .plats__transition2:active .section__element-items{
     display: block;
     background: $tertiary;
     width: 50px;
     height: 50px;
   }
+
   .plats__transition3:active .section__element-items{
     display: block;
     background: $tertiary;
     width: 50px;
     height: 50px;
   }
+
+  .plats__transition4:active .section__element-items{
+    display: block;
+    background: $tertiary;
+    width: 50px;
+    height: 50px;
+  }
+
   .plats__transition1:active .cache {
     color: #fff;
     position: relative;
@@ -194,6 +220,17 @@ $black:#000;
   }
 
   .plats__transition3:active .cache {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    width: 17px;
+    animation:rotate 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition4:active .cache {
     color: #fff;
     position: relative;
     top: 15px;

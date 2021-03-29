@@ -18,9 +18,12 @@ button{
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
   cursor: pointer;
+  width: 192px;
+}
+
+.btn{
   position: relative;
   left: 400px;
-  width: 192px;
 }
 
 button:focus{
@@ -42,7 +45,7 @@ button:focus{
 
   .btn{
     position: relative;
-    left: 294px;
+    left: 269px;
     width: 192px;
   }
 

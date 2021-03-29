@@ -64,10 +64,6 @@ img {
 }
 
 /* MAIN*/
-main {
-  padding: 0 14px;
-}
-
 /* FONCTIONNEMENT */
 .section__title {
   font-weight: bold;
@@ -163,6 +159,7 @@ main {
 
 .section-prev__title {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .section-prev__content {

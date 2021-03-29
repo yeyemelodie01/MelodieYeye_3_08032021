@@ -10,7 +10,7 @@
   .page {
     display: flex;
     justify-content: flex-start;
-    margin: 0;
+    margin: 6px 0;
   }
   .page a {
     margin-right: 50px;
@@ -22,12 +22,35 @@
   }
 
   /* TITRE */
+  .titre {
+    height: 244px;
+    margin-bottom: 56px;
+  }
+  .titre h1 {
+    padding-top: 16px;
+  }
   .titre .degrade:active {
     font-weight: bold;
     background: linear-gradient(0deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     color: transparent;
     animation: prog 2s forwards;
+  }
+  .titre .fa-heart__posi1 {
+    margin-left: 483px;
+  }
+  .titre .fa-heart__posi2 {
+    margin-left: 478px;
+  }
+  .titre .fa-heart__posi3 {
+    margin-left: 529px;
+  }
+  .titre .fa-heart__posi4 {
+    margin-left: 489px;
+  }
+
+  .imgmenu {
+    height: 255px;
   }
 
   /* MAIN */
@@ -57,17 +80,17 @@
   .plats h3 {
     font-size: 12px;
     margin-bottom: 2px;
-    transition: width 3s linear;
+    transition: width 2s linear;
   }
   .plats p {
-    width: 158px;
+    width: 183px;
     font-size: 11px;
-    transition: width 3s linear;
+    transition: width 2s linear;
   }
   .plats .plats__money {
     position: relative;
     bottom: 7px;
-    transition: margin-right 3s;
+    transition: margin-right 2s;
   }
 
   .plats__transition1 {
@@ -82,40 +105,56 @@
     animation: slideDown 2.5s forwards;
   }
 
+  .plats__transition4 {
+    animation: slideDown 3s forwards;
+  }
+
   .plats__transition1:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 110px;
+    width: 145px;
   }
 
   .plats__transition1:active p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 110px;
+    width: 145px;
   }
 
   .plats__transition2:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 110px;
+    width: 145px;
   }
 
   .plats__transition2:active p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 110px;
+    width: 145px;
   }
 
   .plats__transition3:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 110px;
+    width: 145px;
   }
 
   .plats__transition3:active p {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 110px;
+    width: 145px;
+  }
+
+  .plats__transition4:active h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 145px;
+  }
+
+  .plats__transition4:active p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 145px;
   }
 
   .section__element-items {
@@ -132,6 +171,10 @@
   }
 
   .plats__transition3:active .plats__money {
+    margin-right: 7px;
+  }
+
+  .plats__transition4:active .plats__money {
     margin-right: 7px;
   }
 
@@ -156,6 +199,13 @@
     height: 43px;
   }
 
+  .plats__transition4:active .section__element-items {
+    display: block;
+    background: #99E2D0;
+    width: 50px;
+    height: 43px;
+  }
+
   .cache {
     position: relative;
     top: 13px;
@@ -169,7 +219,7 @@
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 3s linear;
+    animation: rotate 2s linear;
     animation-fill-mode: forwards;
   }
 
@@ -180,7 +230,7 @@
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 2s linear;
     animation-fill-mode: forwards;
   }
 
@@ -191,7 +241,18 @@
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .plats__transition4:active .cache {
+    color: #fff;
+    position: relative;
+    top: 13px;
+    left: 13px;
+    font-size: 17px;
+    width: 17px;
+    animation: rotate 2s linear;
     animation-fill-mode: forwards;
   }
 }

@@ -66,6 +66,12 @@
   .section-prev .section-prev__content {
     justify-content: space-around;
   }
+
+  .section-prev__title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
 }
 
 /*# sourceMappingURL=tablette.css.map */
