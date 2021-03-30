@@ -26,7 +26,6 @@
   height: 100px;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
-  /* Placement du loader au mileu de la page */
   margin: 326px 442px;
   position: absolute;
   top: 0;

@@ -81,15 +81,6 @@
     padding-left: 9px;
     font-weight: 300;
   }
-  .mets p:active .cache {
-    background: #99E2D0;
-    display: block;
-    padding: 18px 13px 20px 13px;
-    position: relative;
-    bottom: 24px;
-    border-radius: 0 9px 9px 0;
-    color: #fff;
-  }
 
   .plats {
     width: 290px;
@@ -98,6 +89,7 @@
     box-shadow: 8px 8px 10px #aaa;
     padding-bottom: 5px;
     margin-bottom: 15px;
+    overflow: hidden;
   }
   .plats .plats__money {
     margin-right: 9px;
@@ -120,37 +112,65 @@
   .plats__transition1 {
     animation: slideDown 1.5s forwards;
   }
-  .plats__transition1 .plats_text:active p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 176px;
-  }
 
   .plats__transition2 {
     animation: slideDown 2s forwards;
-  }
-  .plats__transition2 .plats_text:active p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 176px;
   }
 
   .plats__transition3 {
     animation: slideDown 2.5s forwards;
   }
-  .plats__transition3 .plats_text:active p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 176px;
-  }
 
   .plats__transition4 {
     animation: slideDown 3s forwards;
   }
-  .plats__transition4 .plats_text:active p {
+
+  .plats__transition1:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 176px;
+    width: 190px;
+  }
+
+  .plats__transition1:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition2:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition2:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition3:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition3:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition4:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
+  }
+
+  .plats__transition4:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 190px;
   }
 
   .plats__transition1:active .plats__money {
