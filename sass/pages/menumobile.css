@@ -125,49 +125,49 @@
     animation: slideDown 3s forwards;
   }
 
-  .plats__transition1:hover h3 {
+  .plats__transition1:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition1:hover p {
+  .plats__transition1:active p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition2:hover h3 {
+  .plats__transition2:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition2:hover p {
+  .plats__transition2:active p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition3:hover h3 {
+  .plats__transition3:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition3:hover p {
+  .plats__transition3:active p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition4:hover h3 {
+  .plats__transition4:active h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
   }
 
-  .plats__transition4:hover p {
+  .plats__transition4:active p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
