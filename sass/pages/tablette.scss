@@ -1,4 +1,9 @@
-$lightgray: #f2f2f2;
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$ligthgray: #f2f2f2;
+$black: #000;
+$shadow: #aaa;
 @media screen and (min-width: 481px) and (max-width: 1024px){
   /* GENERAL */
   body{
@@ -16,14 +21,14 @@ $lightgray: #f2f2f2;
   .section__infos {
   }
   .section__infos-content{
-    background: $lightgray;
+    background: $ligthgray;
     margin: 0 147px;
     input{
       border: none;
       font-size: 17px;
       padding: 16px;
       width: 334px;
-      background: $lightgray;
+      background: $ligthgray;
     }
     input:focus{
       outline:none;
@@ -37,7 +42,7 @@ $lightgray: #f2f2f2;
     background: #9356DC4A;
   }
   .section li:active i {
-    color: #9356DC;
+    color: $primary;
   }
   .section ol{
     margin-left: 0;
@@ -72,5 +77,29 @@ $lightgray: #f2f2f2;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 21px;
+  }
+  .degrade:active {
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+    -webkit-animation: prog 2s forwards;
+  }
+  @-webkit-keyframes prog {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes prog{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

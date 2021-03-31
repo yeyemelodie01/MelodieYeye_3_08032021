@@ -72,6 +72,32 @@
     font-size: 20px;
     margin-bottom: 21px;
   }
+
+  .degrade:active {
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: prog 2s forwards;
+    -webkit-animation: prog 2s forwards;
+  }
+
+  @-webkit-keyframes prog {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes prog {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 /*# sourceMappingURL=tablette.css.map */
