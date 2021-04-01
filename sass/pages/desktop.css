@@ -90,6 +90,7 @@ img {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
   cursor: pointer;
+  background: #f2f2f2;
 }
 .section li:before {
   content: counter(resto);
@@ -114,19 +115,19 @@ img {
 .section__list-items1 i {
   padding-right: 22px;
   padding-left: 10px;
-  opacity: 0.4;
+  color: #7C7C7C;
 }
 
 .section__list-items2 i {
   padding-right: 17px;
   padding-left: 10px;
-  opacity: 0.4;
+  color: #7C7C7C;
 }
 
 .section__list-items3 i {
   padding-right: 13px;
   padding-left: 10px;
-  opacity: 0.4;
+  color: #7C7C7C;
 }
 
 /* RESTAURANTS */

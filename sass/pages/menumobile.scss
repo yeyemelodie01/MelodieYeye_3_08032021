@@ -6,7 +6,7 @@ $white: #fff;
 $black:#000;
 
 /* DEBUT RESPONSIVE MOBILE */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
   .page{
     display: flex;
     justify-content: flex-start;
@@ -26,18 +26,13 @@ $black:#000;
     }
   }
   /* MAIN */
-  main{
-    margin: 0 15px;
-    padding: 0;
-    display: inherit;
-    h2{
-      margin-bottom: 4px;
-      font-size: 14px;
-    }
     .main__content{
       display: inherit;
+      h2{
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
     }
-  }
 
   /* TITRE ET IMAGE */
   .imgmenu{
