@@ -215,11 +215,6 @@
 }
 
 /* MAIN */
-main {
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-}
 main h2 {
   margin-bottom: 4px;
   font-size: 14px;
@@ -267,24 +262,24 @@ main .main__content {
   align-items: flex-end;
   position: relative;
   bottom: 2px;
-  transition: margin-right 2s;
+  transition: margin-right 1.5s;
 }
 .plats h3 {
   padding-top: 4px;
   padding-left: 8px;
-  transition: width 2s;
+  transition: width 1.5s;
 }
 .plats p {
   width: 259px;
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 8px;
-  transition: width 2s;
+  transition: width 1.5s;
 }
 
 @keyframes slideDown {
   0% {
-    transform: translateY(50px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -298,7 +293,7 @@ main .main__content {
   width: 0;
   height: 50px;
   border-radius: 0 11px 11px 0;
-  transition: width 2s;
+  transition: width 1.5s;
 }
 
 .cache {
@@ -308,7 +303,7 @@ main .main__content {
   left: 15px;
   font-size: 17px;
   width: 17px;
-  transition: color 2s;
+  transition: color 1.5s;
 }
 
 @keyframes rotate {

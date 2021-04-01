@@ -39,8 +39,11 @@ $white: #fff;
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
   footer{
+    .footer__marge{
+      margin: 0 auto;
+    }
     a{
       font-size: 14px;
     }

@@ -10,20 +10,44 @@ $icon: #7C7C7C;
 $shadow: #aaa;
 $white: #fff;
 $ligthgray: #f2f2f2;
+body{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+h1{
+  font-family: 'Shrikhand', cursive;
+}
+
+h2{
+  font-weight: 100;
+}
+
+h3,p{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
 @media screen and (min-width: 1025px){
-  .section__infos {
-    div{
-      margin: 0 264px;
-    }
-  }
+
   .section__infos-content{
-    background: $ligthgray;
+    background: $gray;
+    box-shadow: 0 20px 20px -22px $shadow inset;
     input{
       border: none;
       font-size: 17px;
       padding: 16px;
       width: 334px;
-      background: $ligthgray;
+      background: transparent;
     }
     input:focus{
       outline:none;
@@ -74,7 +98,7 @@ img{
 /* INFOS */
 .section__infos{
   text-align: center;
-  margin: 0 15px;
+  background: $ligthgray;
   .section__infos--bold{
     font-weight: bold;
     margin-top: 40px;
@@ -157,6 +181,12 @@ img{
 
   /* RESTAURANTS */
 .section-prev{
+  background: $ligthgray;
+  .section-prev_position{
+    padding-top: 39px;
+    margin: 0 auto;
+    width: 998px;
+  }
     figure{
       width: 333px;
       height: 213px;

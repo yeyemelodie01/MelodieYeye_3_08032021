@@ -1,7 +1,7 @@
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /* GENERAL */
   body {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -12,22 +12,31 @@
   }
 
   /* INFOS */
-  .section__infos-content {
+  .section__infos {
     background: #f2f2f2;
-    margin: 0 147px;
+    margin: 0;
+  }
+
+  .section__infos-content {
+    background: #e9e9e9;
+    box-shadow: 0 20px 20px -22px #aaa inset;
   }
   .section__infos-content input {
     border: none;
     font-size: 17px;
     padding: 16px;
     width: 334px;
-    background: #f2f2f2;
+    background: transparent;
   }
   .section__infos-content input:focus {
     outline: none;
   }
   .section__infos-content i {
     padding-left: 94px;
+  }
+
+  #content main {
+    margin: 0;
   }
 
   /* FONCTIONENEMENT */
@@ -51,12 +60,20 @@
   }
 
   /* RESTAURANTS */
+  .section-prev {
+    background: #f2f2f2;
+    padding-top: 39px;
+  }
   .section-prev figure {
     width: 260px;
     height: 184px;
   }
   .section-prev figure img {
     height: 125px;
+  }
+  .section-prev .section-prev_position {
+    width: 753px;
+    margin: 0 auto;
   }
   .section-prev .section-prev__content-items {
     position: relative;
@@ -71,6 +88,7 @@
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 21px;
+    margin-left: 12px;
   }
 
   .degrade:active {

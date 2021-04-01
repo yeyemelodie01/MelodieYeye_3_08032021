@@ -31,33 +31,30 @@ button:focus {
     -webkit-transform: scale(1.2);
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   button:active {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
   }
 
   .btn {
-    position: relative;
-    left: 269px;
-    width: 192px;
+    margin: 38px auto;
+    position: inherit;
   }
 
   .section__infos-btn {
     position: inherit;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   button:active {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
   }
 
   .btn {
-    padding: 12px 33px;
-    margin-top: 0;
-    position: relative;
-    left: 43px;
+    margin: 38px auto;
+    position: inherit;
     width: 192px;
   }
 
