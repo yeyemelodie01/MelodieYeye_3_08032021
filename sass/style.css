@@ -1,0 +1,12 @@
+@import url("layout/header.scss");
+@import url("layout/footer.scss");
+@import url("pages/desktop.scss");
+@import url("pages/menudesktop.scss");
+@import url("pages/mobile.scss");
+@import url("pages/menumobile.scss");
+@import url("pages/tablette.scss");
+@import url("pages/menutablette.scss");
+@import url("components/buttons.scss");
+@import url("components/loader.scss");
+
+/*# sourceMappingURL=style.css.map */
