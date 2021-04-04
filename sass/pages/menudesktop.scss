@@ -9,14 +9,9 @@ $icon: #7C7C7C;
 $shadow: #aaa;
 @media screen and (min-width: 1025px) {
   /* COEUR */
-  .titre__position{
-    .degrade:hover{
-      font-weight: bold;
-      background: linear-gradient(0deg, $primary, $secondary);
-      -webkit-background-clip: text;
-      color: transparent;
-      width: 46px;
-      height:29px;
+  .titre{
+    .degrade{
+      top: 8px;
     }
   }
   /* TRANSITION TEXTE PLATS */
@@ -176,16 +171,6 @@ $shadow: #aaa;
   }
 
 }
-
-@keyframes prog{
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* PAGE */
 .page{
   margin-left: 39px;
@@ -229,19 +214,21 @@ $shadow: #aaa;
     background: transparent;
     padding: 0;
   }
-  .fa-heart{
-    cursor: pointer;
-    padding-left: 7px;
-    padding-right: 7px;
-    font-size: 25px;
-    color: $black;
+  .section-prev__content-heart{
     order: 0;
     display: flex;
     align-items: center;
-    margin: 0;
-    width: 46px;
-    height: 0;
-    transition: height 3s ease;
+    width: 21px;
+    height: 35px;
+  }
+  .static{
+    font-size: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 19px;
+    color: #000;
+    transition:color 3s;
+    z-index: 1;
   }
 }
 

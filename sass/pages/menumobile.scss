@@ -72,12 +72,25 @@ $shadow: #aaa;
       background: transparent;
       padding: 0;
     }
-    .degrade:active{
-      font-weight: bold;
-      background: linear-gradient(0deg, $primary, $secondary);
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: prog 2s forwards;
+    .section-prev__content-heart{
+      order: 0;
+      display: flex;
+      align-items: center;
+      width: 21px;
+      height: 35px;
+    }
+    .static{
+      font-size: 20px;
+      cursor: pointer;
+      width: 20px;
+      height: 19px;
+      color: #000;
+      transition:color 3s;
+      z-index: 1;
+    }
+
+    .degrade{
+      top: 8px;
     }
     .fa-heart__posi1{
       margin: 0;

@@ -111,10 +111,8 @@ $shadow: #aaa;
       }
     }
     .content-items{
-      span{
         bottom: 123px;
         left: 204px;
-      }
     }
     .content__element{
       figcaption{
@@ -122,10 +120,6 @@ $shadow: #aaa;
       }
     }
   }
-  #restaurant{
-
-  }
-
   figcaption{
     display: flex;
     flex-direction: row-reverse;
@@ -137,30 +131,73 @@ $shadow: #aaa;
         margin-bottom: 2px;
       }
     }
+    .section-prev__content-heart{
+      order: -1;
+      display: flex;
+      align-items: flex-end;
+      width: 21px;
+      height: 35px;
+      .static{
+        font-size: 20px;
+        cursor: pointer;
+        width: 20px;
+        height: 19px;
+        color: #000;
+        transition:color 1.5s;
+        z-index: 1;
+      }
+
+      .degrade{
+        width: 20px;
+        height: 0px;
+        padding-left: 1px;
+        padding-right: 1px;
+        position: relative;
+        right: 21px;
+        top: 16px;
+        font-size: 20px;
+        background: linear-gradient(0deg, #9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: height 1.3s;
+        display: flex;
+        align-self: flex-start;
+      }
+    }
   }
-  .degrade:active {
-    font-weight: bold;
-    background: -webkit-linear-gradient(0deg, $primary, $secondary);
+  .static{
+    font-size: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 19px;
+    color: #000;
+    transition:color 1.5s;
+    z-index: 1;
+  }
+
+  .degrade{
+    width: 20px;
+    height: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+    position: relative;
+    right: 21px;
+    top: 16px;
+    font-size: 20px;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: prog 2s forwards;
-    -webkit-animation: prog 2s forwards;
+    color: transparent;
+    transition: height 1.3s;
+    display: flex;
+    align-self: flex-start;
   }
-  @-webkit-keyframes prog {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .section-prev__content-heart:active .degrade{
+    height: 20px;
+    width: 20px;
   }
-  @keyframes prog{
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+  .section-prev__content-heart:active .static{
+    color: transparent;
   }
 }
 /* FIN RESPONSIVE MOBILE */
