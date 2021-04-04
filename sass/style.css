@@ -371,48 +371,56 @@ figcaption div h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition1:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition2:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition2:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition3:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition3:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition4:hover h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition4:hover p {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 190px;
+    cursor: pointer;
   }
 
   .plats__transition1:hover .plats__money {
@@ -957,6 +965,7 @@ figcaption div h3 {
     padding-top: 4px;
     padding-left: 8px;
     padding-bottom: 1px;
+    transition: width 0.5s;
   }
   .plats p {
     padding-left: 8px;
@@ -1368,17 +1377,17 @@ figcaption div h3 {
   .plats h3 {
     font-size: 12px;
     margin-bottom: 2px;
-    transition: width 1.5s linear;
+    transition: width 0.5s linear;
   }
   .plats p {
     width: 183px;
     font-size: 11px;
-    transition: width 1.5s linear;
+    transition: width 0.5s linear;
   }
   .plats .plats__money {
     position: relative;
     bottom: 7px;
-    transition: margin-right 1.5s;
+    transition: margin-right 0.5s;
   }
 
   .plats__transition1 {
@@ -1507,7 +1516,7 @@ figcaption div h3 {
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -1518,7 +1527,7 @@ figcaption div h3 {
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -1529,7 +1538,7 @@ figcaption div h3 {
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -1540,7 +1549,7 @@ figcaption div h3 {
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 

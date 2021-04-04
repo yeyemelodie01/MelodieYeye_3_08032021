@@ -110,17 +110,17 @@ $shadow: #aaa;
     h3{
       font-size: 12px;
       margin-bottom: 2px;
-      transition: width 1.5s linear;
+      transition: width 0.5s linear;
     }
     p{
       width: 183px;
       font-size: 11px;
-      transition: width 1.5s linear;
+      transition: width 0.5s linear;
     }
     .plats__money{
       position: relative;
       bottom: 7px;
-      transition: margin-right 1.5s;
+      transition: margin-right 0.5s;
     }
   }
 
@@ -245,7 +245,7 @@ $shadow: #aaa;
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -256,7 +256,7 @@ $shadow: #aaa;
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation:rotate 0.5s linear;
+    animation:rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -267,7 +267,7 @@ $shadow: #aaa;
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation:rotate 0.5s linear;
+    animation:rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -278,7 +278,7 @@ $shadow: #aaa;
     left: 13px;
     font-size: 17px;
     width: 17px;
-    animation:rotate 0.5s linear;
+    animation:rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
   @keyframes rotate{
