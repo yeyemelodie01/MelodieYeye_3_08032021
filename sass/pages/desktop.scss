@@ -42,6 +42,8 @@ img{
   .section__infos-content{
     background: $gray;
     box-shadow: 0 20px 20px -22px $shadow inset;
+    display: flex;
+    justify-content: center;
     input{
       border: none;
       font-size: 17px;
@@ -54,6 +56,8 @@ img{
     }
     i{
       padding-left: 51px;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -80,15 +84,21 @@ img{
     }
   }
 
-
-
   .degrade:hover {
     font-weight: bold;
     background: -webkit-linear-gradient(0deg, $primary, $secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: prog 2s forwards;
-    -webkit-animation: prog 2s forwards;
+    width: 46px;
+    height:29px;
+  }
+}
+
+.header{
+  h1{
+    width: 233px;
+    margin: 21px auto;
+    font-size: 44px;
   }
 }
 img{
@@ -111,12 +121,16 @@ img{
 
 .section__title{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
 }
 .section{
+  .section-margin{
+    width: 999px;
+    margin: 38px auto;
+  }
   ol{
     padding: 0;
-    margin: 31px 0 41px 9px;
+    margin: 26px 0 0 0;
     counter-reset: resto;
     list-style: none;
     display: flex;
@@ -260,6 +274,9 @@ figcaption{
   margin-top: 10px;
   padding-left: 7px;
   padding-right: 7px;
+  width: 46px;
+  height: 0;
+  transition: height 3s ease;
 }
 @-webkit-keyframes prog {
   0% {

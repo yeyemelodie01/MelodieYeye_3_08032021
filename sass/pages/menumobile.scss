@@ -10,7 +10,7 @@ $icon: #7C7C7C;
 $shadow: #aaa;
 
 /* DEBUT RESPONSIVE MOBILE */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .page{
     display: flex;
     justify-content: flex-start;
@@ -22,7 +22,7 @@ $shadow: #aaa;
     }
     img{
       width: 200px;
-      height: 47px;
+      margin: 14px auto;
     }
     i{
       margin: 0 40px 0 34px;
@@ -84,13 +84,16 @@ $shadow: #aaa;
       order: 0;
     }
     .fa-heart__posi2{
-      margin-left: 31px;
+      margin: 0;
+      order: 0;
     }
     .fa-heart__posi3{
-      margin-left: 80px;
+      margin: 0;
+      order: 0;
     }
     .fa-heart__posi4{
-      margin-left: 43px;
+      margin: 0;
+      order: 0;
     }
   }
   /* METS */
@@ -242,7 +245,7 @@ $shadow: #aaa;
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation: rotate 0.5s linear;
+    animation: rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -253,7 +256,7 @@ $shadow: #aaa;
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation:rotate 0.5s linear;
+    animation:rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -264,7 +267,7 @@ $shadow: #aaa;
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation:rotate 0.5s linear;
+    animation:rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
 
@@ -275,12 +278,22 @@ $shadow: #aaa;
     left: 15px;
     font-size: 17px;
     width: 17px;
-    animation:rotate 0.5s linear;
+    animation:rotate 0.3s linear;
     animation-fill-mode: forwards;
   }
   @keyframes rotate{
-    0%{transform: rotateZ(180deg);}
-    100%{ transform: rotateZ(0deg);}
+    0%{
+      transform: rotateZ(90deg);
+    }
+    25%{
+      transform: rotateZ(180deg);
+    }
+    75%{
+      transform: rotateZ(270deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
   }
 }
 /* FIN RESPONSIVE MOBILE*/
