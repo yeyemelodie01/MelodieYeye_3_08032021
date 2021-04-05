@@ -646,7 +646,7 @@ figcaption .static {
 
 @keyframes slideDown {
   0% {
-    transform: translateY(20px);
+    transform: translateY(40px);
     opacity: 0;
   }
   100% {
@@ -893,7 +893,7 @@ figcaption .static {
     margin: 14px auto;
   }
   .page i {
-    margin: 0 40px 0 34px;
+    margin: 0 0 0 34px;
     font-size: 22px;
   }
 
